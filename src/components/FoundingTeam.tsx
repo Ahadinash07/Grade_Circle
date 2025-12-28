@@ -1,0 +1,102 @@
+import React, { useState } from 'react';
+
+export const FoundingTeam = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+  const teamMembers = [
+    {
+      name: "Prashant Tibrewal",
+      title: "MIT (USA) Alum & Experience Career Coach",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/prashant-tibrewal.png"
+    },
+    {
+      name: "Aditi Arya Kotak",
+      title: "Yale University Alum & Miss India 2015",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/aditi-arya-kotak.png"
+    },
+    {
+      name: "Neelabh Prabhat",
+      title: "IIT Delhi Alum & Ex-Citibank",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/neelabh-prabhat.png"
+    }
+  ];
+
+  return (
+    <>
+      {/* Mobile Version */}
+      <div className="block md:hidden w-full px-4 py-8 bg-white">
+        {/* Title */}
+        <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-3xl text-center mb-6">
+          Founding Team
+        </h2>
+
+        {/* Team Member Card */}
+        <div className="border-2 border-[#122e6c] rounded-lg p-4 mb-4">
+          <img
+            src={teamMembers[activeIndex].image}
+            alt={teamMembers[activeIndex].name}
+            className="w-full h-auto max-h-[300px] object-contain mx-auto"
+          />
+        </div>
+
+        {/* Member Info */}
+        <div className="text-center mb-4">
+          <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-xl">
+            {teamMembers[activeIndex].name}
+          </h3>
+          <p className="[font-family:'Inter',Helvetica] font-normal text-black text-base mt-1">
+            {teamMembers[activeIndex].title}
+          </p>
+        </div>
+
+        {/* Dots Navigation */}
+        <div className="flex justify-center gap-2">
+          {teamMembers.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveIndex(index)}
+              className={`w-3 h-3 rounded-full ${
+                index === activeIndex ? 'bg-[#122e6c]' : 'bg-gray-300'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Version - Original */}
+      <div className="hidden md:block">
+        <p className="absolute top-[6189px] left-[515px] w-[293px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
+          Founding Team
+        </p>
+
+        <div className="absolute top-[6450px] left-[35px] w-[1340px] h-[290px] bg-[#f7f7f7] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
+        <div className="absolute top-[6567px] left-20 w-[1182px] h-[113px] bg-[#f7f7f7] shadow-[0px_-1px_1px_#00000040]" />
+
+        <div className="absolute top-[6590px] left-[105px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal] whitespace-nowrap">
+          Prashant Tibrewal
+        </div>
+        <p className="absolute top-[6624px] left-[74px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
+          MIT (USA) Alum &amp;<br />Experience Career Coach
+        </p>
+
+        <div className="absolute top-[6590px] left-[545px] w-[178px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal]">
+          Aditi Arya Kotak
+        </div>
+        <p className="absolute top-[6624px] left-[523px] w-[223px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
+          Yale University Alum<br />&amp; Miss India 2015
+        </p>
+
+        <div className="absolute top-[6590px] left-[1011px] w-[178px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal]">
+          Neelabh Prabhat
+        </div>
+        <div className="absolute top-[6624px] left-[990px] w-[223px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
+          IIT Delhi Alum &amp;<br />Ex-Citibank
+        </div>
+
+        <img className="absolute top-[6211px] left-[27px] w-[358px] h-[358px] object-cover" alt="Prashant tibrewal" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/prashant-tibrewal.png" />
+        <img className="absolute top-[6210px] left-[491px] w-[358px] h-[358px] object-cover" alt="Aditi arya kotak" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/aditi-arya-kotak.png" />
+        <img className="absolute top-[6210px] left-[897px] w-[358px] h-[358px] object-cover" alt="Neelabh prabhat" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/neelabh-prabhat.png" />
+      </div>
+    </>
+  );
+};

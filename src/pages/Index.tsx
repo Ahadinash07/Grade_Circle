@@ -6,6 +6,10 @@ import { ProgramOverview } from '../components/ProgramOverview';
 import { CareerStreams } from '../components/CareerStreams';
 import { Testimonials } from '../components/Testimonials';
 import { ProgramStructure } from '../components/ProgramStructure';
+import { ProgramDeliverables } from '../components/ProgramDeliverables';
+import { FoundingTeam } from '../components/FoundingTeam';
+import { RealStories } from '../components/RealStories';
+import { TrustedSchools } from '../components/TrustedSchools';
 
 const Index = () => {
   return (
@@ -17,6 +21,10 @@ const Index = () => {
       <CareerStreams />
       <Testimonials />
       <ProgramStructure />
+      <ProgramDeliverables />
+      <FoundingTeam />
+      <RealStories />
+      <TrustedSchools />
     </div>
   );
 };
