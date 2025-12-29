@@ -56,35 +56,44 @@ export const TrustedSchools = () => {
         </div>
       </div>
 
-      {/* Desktop Version - Original */}
-      <div className="hidden md:block">
-        <p className="absolute top-[8553px] left-[489px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
-          Trusted by Students from<br />100+ Schools Globally
-        </p>
+      {/* Desktop Version */}
+<div className="hidden md:block">
 
-        <div className="flex w-[1262px] items-center justify-between absolute top-[8857px] left-24">
-          <img className="relative w-[89px] h-[89px] object-cover" alt="Gd geonka gurugram" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gd-geonka-gurugram-school.png" />
-          <img className="relative w-[88px] h-[88px] object-cover" alt="Calcutta" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/calcutta-international-school-.png" />
-          <img className="relative w-[88px] h-[88px] object-cover" alt="Carmel convent" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/carmel-convent-chandigarh.png" />
-          <img className="relative w-[82px] h-[89px] object-cover" alt="Sri ram school" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/sri-ram-school.png" />
-          <img className="relative w-[88px] h-[88px] object-cover" alt="Indus international" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/indus-international-school-logo.png" />
-          <img className="relative w-[352px] h-[88px] object-cover" alt="Oakridge" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oakridge-international-school.png" />
-          <img className="relative w-[88px] h-[88px] object-cover" alt="Oberoi" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oberoi.png" />
-          <img className="relative w-[234px] h-[88px] object-cover" alt="Prometheus school" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/prometheus-school.png" />
-        </div>
+  <p className="absolute top-[8553px] left-[489px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center">
+    Trusted by Students from<br />100+ Schools Globally
+  </p>
 
-        <div className="flex w-[1276px] h-[87px] items-center justify-between absolute top-[8747px] left-[89px]">
-          <img className="relative w-[87px] h-[87px] object-cover" alt="Images" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/images--5-.png" />
-          <img className="relative w-[121px] h-[87px] object-cover" alt="Chirec" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/chirec.png" />
-          <img className="relative w-[86px] h-[85px] object-cover" alt="Aditya birla world" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/aditya-birla-world-academy.png" />
-          <img className="relative w-[87px] h-[86px] object-cover" alt="Ardee school" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ardee-school.png" />
-          <img className="relative w-[185px] h-[87px] object-cover" alt="Brighton college abu" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/brighton-college-abu-dhabi-.png" />
-          <img className="relative w-[85px] h-[85px] object-cover" alt="Daily college indore" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/daily-college-indore-.png" />
-          <img className="relative w-[86px] h-[86px] object-cover" alt="Dps bopal ahmedabad" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/dps-bopal-ahmedabad-logo.png" />
-          <img className="relative w-[86px] h-[86px] object-cover" alt="Euro school" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/euro-school.png" />
-          <img className="relative w-[98px] h-[86px] object-cover" alt="Western academy of" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/western-academy-of-beijing-logo.png" />
-        </div>
-      </div>
+  <div className="flex w-[1276px] h-[87px] items-center justify-between absolute top-[8747px] left-[89px]">
+    <img className="relative w-[87px] h-[87px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/images--5-.png" />
+    <img className="relative w-[121px] h-[87px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/chirec.png" />
+    <img className="relative w-[86px] h-[85px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/aditya-birla-world-academy.png" />
+    <img className="relative w-[87px] h-[86px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ardee-school.png" />
+    <img className="relative w-[185px] h-[87px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/brighton-college-abu-dhabi-.png" />
+    <img className="relative w-[85px] h-[85px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/daily-college-indore-.png" />
+    <img className="relative w-[86px] h-[86px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/dps-bopal-ahmedabad-logo.png" />
+    <img className="relative w-[86px] h-[86px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/euro-school.png" />
+    <img className="relative w-[98px] h-[86px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/western-academy-of-beijing-logo.png" />
+  </div>
+
+  <div className="flex w-[1262px] items-center justify-between absolute top-[8857px] left-24">
+    <img className="relative w-[89px] h-[89px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gd-geonka-gurugram-school.png" />
+    <img className="relative w-[88px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/calcutta-international-school-.png" />
+    <img className="relative w-[88px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/carmel-convent-chandigarh.png" />
+    <img className="relative w-[82px] h-[89px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/sri-ram-school.png" />
+    <img className="relative w-[88px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/indus-international-school-logo.png" />
+    <img className="relative w-[352px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oakridge-international-school.png" />
+    <img className="relative w-[88px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oberoi.png" />
+    <img className="relative w-[234px] h-[88px] object-cover" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/prometheus-school.png" />
+  </div>
+
+  <div className="absolute top-[9020px] left-0 right-0 flex justify-center">
+    <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-14 rounded-full">
+      Apply Now
+    </button>
+  </div>
+
+</div>
+
     </>
   );
 };
