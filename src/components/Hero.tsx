@@ -11,7 +11,7 @@ export const Hero = () => {
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
       />
       <img
-        className="hidden md:block absolute top-[514px] left-[-7px] w-[1447px] h-[266px]"
+        className="hidden md:block absolute top-[514px] left-0 w-[1447px] h-[266px]"
         alt="Vector"
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-1.svg"
       />
