@@ -10,6 +10,9 @@ import { ProgramDeliverables } from '../components/ProgramDeliverables';
 import { FoundingTeam } from '../components/FoundingTeam';
 import { RealStories } from '../components/RealStories';
 import { TrustedSchools } from '../components/TrustedSchools';
+import { StudentExperiences } from '../components/StudentExperiences';
+import { SampleProjects } from '../components/SampleProjects';
+import { Footer } from '../components/Footer';
 
 const Index = () => {
   return (
@@ -19,12 +22,15 @@ const Index = () => {
       <FoundedByAlumni />
       <ProgramOverview />
       <CareerStreams />
+      <StudentExperiences />
       <Testimonials />
       <ProgramStructure />
       <ProgramDeliverables />
       <FoundingTeam />
       <RealStories />
       <TrustedSchools />
+      <SampleProjects />
+      <Footer />
     </div>
   );
 };
