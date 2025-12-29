@@ -94,13 +94,13 @@ export const CareerStreams = () => {
       <div className="hidden md:block">
         <div className="absolute top-[1969px] left-0 w-[1440px] h-[1373px] bg-[#f7f7f7]" />
 
-        <p className="absolute top-[2000px] left-[422px] [font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center tracking-[0] leading-[normal]">
+        <p className="absolute top-[2010px] left-[422px] z-20 [font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center tracking-[0] leading-[normal] bg-[#f7f7f7]">
           Sample Career Streams &
           <br />
-          Mentor Backgrounds
+          <span>Mentor Backgrounds</span>
         </p>
 
-        <div className="absolute top-[2057px] left-[457px] w-[536px] h-[59px] bg-[#f7f7f7]" />
+        <div className="absolute top-[2080px] left-[457px] w-[536px] h-[59px] bg-[#f7f7f7]" />
 
         <div className="top-[2153px] h-[118px] absolute left-20 w-[1270px]">
           <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
@@ -213,10 +213,10 @@ export const CareerStreams = () => {
           <img className="relative w-[131px] h-[131px] object-cover" alt="Oracle logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png" />
         </div>
 
-        <img className="absolute top-[2428px] left-[1080px] w-[72px] h-[72px] object-cover" alt="Barclays logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png" />
-        <img className="absolute top-[2428px] left-[1212px] w-[72px] h-[72px] object-cover" alt="Ey logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png" />
-        <img className="absolute top-[2428px] left-[844px] w-[72px] h-[72px] object-cover" alt="Jp morgan logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png" />
-        <img className="absolute top-[2428px] left-[962px] w-[72px] h-[72px] object-cover" alt="Kpmg logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png" />
+        <img className="absolute top-[2428px] left-[1080px] w-[80px] h-[80px] object-cover" alt="Barclays logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png" />
+        <img className="absolute top-[2428px] left-[1212px] w-[80px] h-[80px] object-cover" alt="Ey logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png" />
+        <img className="absolute top-[2428px] left-[844px] w-[80px] h-[80px] object-cover" alt="Jp morgan logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png" />
+        <img className="absolute top-[2428px] left-[962px] w-[80px] h-[80px] object-cover" alt="Kpmg logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png" />
         <img className="absolute top-[2544px] left-[1007px] w-[109px] h-[109px] object-cover" alt="Ag logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png" />
         <img className="absolute top-[2544px] left-[1175px] w-[109px] h-[109px] object-cover" alt="Bristol myers logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png" />
         <img className="absolute top-[2532px] left-[839px] w-[109px] h-[109px] object-cover" alt="Novartis logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png" />

@@ -31,7 +31,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full md:w-[500px] h-auto md:h-[540px] items-start gap-6 md:gap-[41px] px-5 md:px-[37px] py-8 md:py-[41px] bg-[#000000f5] rounded-[30px] md:rounded-[50px] border border-solid border-black">
+    <div className="flex flex-col w-full md:w-[500px] h-auto md:h-[560px] items-start gap-6 md:gap-[41px] px-5 md:px-[37px] py-8 md:py-[41px] bg-[#000000f5] rounded-[30px] md:rounded-[50px] border border-solid border-black">
       <div className="flex flex-col w-full md:w-[426px] items-start gap-2 relative">
         <div className="relative w-full [font-family:'Inter',Helvetica] font-bold text-white text-2xl md:text-[32px] tracking-[0] leading-tight">
           Connect With An Expert
@@ -41,23 +41,23 @@ export const ContactForm = () => {
         </p>
       </div>
       
-      <form onSubmit={handleSubmit} className="flex flex-col w-full md:w-[426px] items-start gap-3 md:gap-3.5 relative flex-1">
+      <form onSubmit={handleSubmit} className="flex flex-col w-full md:w-[426px] items-start gap-3 md:gap-3.5 relative flex-1 pb-5 md:pb-10">
         <div className="flex flex-col md:flex-row items-start gap-3 md:gap-3.5 relative self-stretch w-full">
-          <input
-            type="text"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            placeholder="Last Name"
-            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
-            required
-          />
           <input
             type="text"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
             placeholder="First Name"
+            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            placeholder="Last Name"
             className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
             required
           />
@@ -99,7 +99,6 @@ export const ContactForm = () => {
           <span className="relative [font-family:'Inter',Helvetica] font-medium text-white text-[15px] tracking-[-0.15px] leading-normal whitespace-nowrap">
             Submit
           </span>
-          <span className="text-white">✈</span>
         </button>
       </form>
     </div>

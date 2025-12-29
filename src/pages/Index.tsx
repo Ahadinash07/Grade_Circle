@@ -16,8 +16,8 @@ import { Footer } from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[#1a1a1a] overflow-x-hidden">
-      <Header />
+    <div className="relative min-h-screen w-full  overflow-x-hidden">
+      {/* <Header />
       <Hero />
       <FoundedByAlumni />
       <ProgramOverview />
@@ -30,6 +30,20 @@ const Index = () => {
       <RealStories />
       <TrustedSchools />
       <SampleProjects />
+      <Footer /> */}
+      <Header />
+      <Hero />
+      <FoundedByAlumni />
+      <ProgramOverview />
+      <CareerStreams />
+      <Testimonials />
+      <ProgramStructure />
+      <ProgramDeliverables />
+      <FoundingTeam />
+      <RealStories />
+      <TrustedSchools />
+      <SampleProjects />
+      <StudentExperiences />
       <Footer />
     </div>
   );

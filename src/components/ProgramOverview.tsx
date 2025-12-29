@@ -23,8 +23,8 @@ export const ProgramOverview = () => {
         </div>
 
         {/* Student Image - Circular */}
-        <div className="flex justify-center -mt-4 relative z-10">
-          <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-lg">
+        <div className="flex justify-center -mt-4 mt-1 relative z-10">
+          <div className="w-72 h-72 rounded-b-full overflow-hidden border-4 shadow-lg">
             <img
               className="w-full h-full object-cover"
               alt="Pg image"
@@ -134,6 +134,11 @@ export const ProgramOverview = () => {
         </div>
 
         <div className="inline-flex items-center justify-center absolute top-[1444px] left-[673px]">
+          <img
+            className="relative w-[73px] h-[73px] object-cover"
+            alt="Pg certificate"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
+          />
           <p className="relative w-fit [font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-2xl tracking-[0] leading-[normal]">
             Live engagement with mentors from
             <br />

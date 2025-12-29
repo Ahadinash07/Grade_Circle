@@ -61,32 +61,77 @@ export const SampleProjects = () => {
         </p>
 
         <p className="absolute top-[9559px] left-[143px] w-[1215px] [font-family:'Inter',Helvetica] font-normal text-black text-xl tracking-[0] leading-5">
-          <span className="font-bold leading-10">Market Expansion:</span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[0px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          />
+            Market Expansion:</span>
           <span className="leading-10"> Develop a strategy for an Indian electric scooter brand to enter Southeast Asia.<br /></span>
-          <span className="font-bold leading-10">Equity Research:</span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[40px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          /> Equity Research:</span>
           <span className="leading-10"> Analyze a listed company and recommend a buy, hold, or sell rating with supporting valuation.<br /></span>
-          <span className="font-bold leading-10">Healthcare Innovation: </span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[80px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          /> Healthcare Innovation: </span>
           <span className="leading-10">Create a market-entry plan for a next-gen prenatal screening test in India.<br /></span>
-          <span className="font-bold leading-10">Litigation Strategy: </span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[120px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          /> Litigation Strategy: </span>
           <span className="leading-10">Design a courtroom advocacy plan for a public interest case.<br /></span>
-          <span className="font-bold leading-10">UX Redesign: </span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[160px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          />
+          UX Redesign: </span>
           <span className="leading-10">Improve user experience for a wearable fitness device through interface and feature innovation.<br /></span>
-          <span className="font-bold leading-10">AI for Social Good: </span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[200px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          />
+          AI for Social Good: </span>
           <span className="leading-10">Build a fake news detection and sentiment analysis system for social media. <br /></span>
-          <span className="font-bold leading-10">Investigative Journalism:</span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[240px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          />
+          Investigative Journalism:</span>
           <span className="leading-10"> Uncover the truth behind "healthy" food labels through data and regulatory analysis.<br /></span>
-          <span className="font-bold leading-10">Policy Review: </span>
+          <span className="font-bold leading-10">
+            <img
+            className={`absolute top-[280px] right-[1240px] w-[30px] h-10`}
+            alt="Check mark"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+          />
+          Policy Review: </span>
           <span className="leading-10">Evaluate the effectiveness of a government employment scheme introduced 5 years ago.</span>
         </p>
 
-        {[9558, 9598, 9638, 9679, 9719, 9760, 9799, 9839].map((top, index) => (
+        {/* {[9558, 9598, 9638, 9679, 9719, 9760, 9799, 9839].map((top, index) => (
           <img
             key={index}
             className={`absolute top-[${top}px] left-24 w-[30px] h-10`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />
-        ))}
+        ))} */}
       </div>
     </>
   );

@@ -64,19 +64,16 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="absolute top-[10058px] left-[535px] w-[345px] h-[86px] bg-[#ef7f1a] rounded-[50px] cursor-pointer hover:bg-[#d66f15] transition-colors" />
+        
 
-        <div className="absolute top-[10087px] left-[645px] [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-          Apply Now
-        </div>
-
-        <p className="absolute top-[10200px] left-[535px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
+        <p className="absolute top-[9960px] left-[105px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
           Program Fee: INR <span className="font-bold">17,500 + 18% GST</span>
         </p>
 
-        <p className="absolute top-[10260px] left-[480px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
+        <p className="absolute top-[10020px] left-[105px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
           Next Cohorts Starting: <span className="font-bold">Jan</span> & <span className="font-bold">Feb</span> (Weekends)
         </p>
+        <div className="absolute top-[9950px] left-[835px]"><ContactForm /></div>
       </div>
     </>
   );
