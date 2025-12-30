@@ -19,7 +19,7 @@ export const ProgramDeliverables = () => {
           <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[48px] leading-tight">
+          <div className="[-webkit-text-stroke:1.2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px] leading-tight">
             Deliverables
           </div>
         </div>
@@ -28,12 +28,12 @@ export const ProgramDeliverables = () => {
         <div className="space-y-5 mb-10">
           {deliverables.map((item, index) => (
             <div key={index} className="flex items-start gap-3.5">
-              <div className="w-7 h-7 bg-[#ef7f1a] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <div className="w-5 h-5 bg-[#ec9950] rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-[17px] leading-tight">
+              <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-[17px]  leading-tight">
                 {item.text}
               </p>
             </div>
