@@ -6,24 +6,24 @@ export const ProgramOverview = () => {
       {/* Mobile Version */}
       <div className="block md:hidden w-full">
         {/* Program Overview Title */}
-        <div className="px-4 py-8">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-3xl leading-tight">
+        <div className="px-4 py-10">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-4xl">
+          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[48px] leading-tight">
             Overview
           </div>
         </div>
 
         {/* Orange Background Section with Description */}
-        <div className="bg-[#ef7f1a] px-4 py-6">
-          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-lg leading-relaxed">
+        <div className="bg-[#ef7f1a] px-5 py-7">
+          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[17px] leading-relaxed">
             Students from Grades 9-12 work with "active industry professionals" on simulated industry-focused projects.
           </p>
         </div>
 
         {/* Student Image - Circular */}
-        <div className="flex justify-center -mt-4 mt-1 relative z-10">
+        <div className="flex justify-center -mt-3 relative z-10">
           <div className="w-72 h-72 rounded-b-full overflow-hidden border-4 shadow-lg">
             <img
               className="w-full h-full object-cover"
@@ -34,54 +34,54 @@ export const ProgramOverview = () => {
         </div>
 
         {/* Features List */}
-        <div className="px-4 py-8 space-y-6 bg-white">
+        <div className="px-5 py-8 space-y-6 bg-white">
           <div className="flex items-center gap-4">
             <img
-              className="w-14 h-14 object-cover"
+              className="w-12 h-12 object-cover flex-shrink-0"
               alt="Pg real world"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-real-world.png"
             />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-base leading-tight flex-1">
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
               Real-world simulated projects to build your skills profile
             </p>
           </div>
 
           <div className="flex items-center gap-4">
             <img
-              className="w-14 h-14 object-cover"
+              className="w-12 h-12 object-cover flex-shrink-0"
               alt="Mentors"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
             />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-base leading-tight flex-1">
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
               Live engagement with mentors from Fortune-500 companies
             </p>
           </div>
 
           <div className="flex items-center gap-4">
             <img
-              className="w-14 h-14 object-cover"
+              className="w-12 h-12 object-cover flex-shrink-0"
               alt="Pg certificate"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
             />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-base leading-tight flex-1">
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
               Certificate & Letter of Recommendation from industry mentors
             </p>
           </div>
 
           <div className="flex items-center gap-4">
             <img
-              className="w-14 h-14 object-cover"
+              className="w-12 h-12 object-cover flex-shrink-0"
               alt="Pg clarity on job"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-clarity-on-job.png"
             />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-base leading-tight flex-1">
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
               Clarity on job roles and responsibilities
             </p>
           </div>
 
           {/* Apply Now Button */}
           <div className="flex justify-center pt-4">
-            <button className="bg-[#ef7f1a] rounded-full px-12 py-4">
+            <button className="bg-[#ef7f1a] rounded-full px-12 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
               <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
                 Apply Now
               </span>
@@ -90,8 +90,103 @@ export const ProgramOverview = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full max-w-6xl mx-auto px-6">
+        {/* Program Overview Title */}
+        <div className="py-14 text-center">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-6xl leading-tight">
+            Program
+          </h2>
+          <div className="[-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-7xl">
+            Overview
+          </div>
+        </div>
+
+        {/* Content Grid */}
+        <div className="px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Left Column - Description and Features */}
+            <div className="space-y-8">
+              {/* Orange Background Section with Description */}
+              <div className="bg-[#ef7f1a] p-8 rounded-lg">
+                <p className="[font-family:'Inter',Helvetica] font-bold text-white text-xl leading-relaxed">
+                  Students from Grades 9-12 work with "active industry professionals" on simulated industry-focused projects.
+                </p>
+              </div>
+
+              {/* Features List */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <img
+                    className="w-16 h-16 object-cover"
+                    alt="Pg real world"
+                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-real-world.png"
+                  />
+                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-lg leading-tight flex-1">
+                    Real-world simulated projects to build your skills profile
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <img
+                    className="w-16 h-16 object-cover"
+                    alt="Mentors"
+                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
+                  />
+                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-lg leading-tight flex-1">
+                    Live engagement with mentors from Fortune-500 companies
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <img
+                    className="w-16 h-16 object-cover"
+                    alt="Pg certificate"
+                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
+                  />
+                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-lg leading-tight flex-1">
+                    Certificate & Letter of Recommendation from industry mentors
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <img
+                    className="w-16 h-16 object-cover"
+                    alt="Pg clarity on job"
+                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-clarity-on-job.png"
+                  />
+                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-lg leading-tight flex-1">
+                    Clarity on job roles and responsibilities
+                  </p>
+                </div>
+
+                {/* Apply Now Button */}
+                <div className="flex justify-center pt-6">
+                  <button className="bg-[#ef7f1a] rounded-full px-16 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+                    <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
+                      Apply Now
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Student Image */}
+            <div className="flex justify-center">
+              <div className="w-80 h-80 rounded-b-full overflow-hidden border-4 shadow-lg">
+                <img
+                  className="w-full h-full object-cover"
+                  alt="Pg image"
+                  src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-image-1.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <img
           className="absolute top-[973px] left-[62px] w-[557px] h-[890px] rounded-[0px_0px_300px_300px] object-cover"
           alt="Pg image"

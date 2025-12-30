@@ -68,8 +68,67 @@ export const ProgramStructure = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full bg-white py-12 px-6">
+        {/* Testimonial */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <div className="relative">
+            {/* Quote Mark */}
+            <div className="text-[#122e6c] text-[150px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal leading-none -mb-16 ml-4">
+              "
+            </div>
+            
+            {/* Testimonial Box */}
+            <div className="border-2 border-[#122e6c] rounded-3xl p-8 ml-8 bg-white">
+              <p className="[font-family:'Montserrat',Helvetica] font-normal text-transparent text-2xl leading-relaxed">
+                <span className="font-semibold italic text-[#f36a1e]">
+                  Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                </span>
+                <span className="font-bold text-[#122e6c] text-xl"> – Sara,</span>
+                <span className="text-black text-xl"> Prometheus School, Noida</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Program Structure Title */}
+        <div className="text-center mb-8">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-5xl leading-tight">
+            Program
+          </h2>
+          <div className="[-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-6xl">
+            Structure
+          </div>
+        </div>
+
+        {/* Core Components */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-[#122e6c] rounded-full py-4 px-8 inline-block mb-8">
+            <span className="[font-family:'Inter',Helvetica] font-bold text-white text-2xl">
+              Core Components
+            </span>
+          </div>
+
+          {/* Checklist */}
+          <div className="space-y-6">
+            {coreComponents.map((item, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <div className="w-8 h-8 rounded-full bg-[#ef7f1a] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="[font-family:'Inter',Helvetica] font-light text-black text-xl">
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="absolute top-[5240px] left-[-5px] w-[1440px] h-[932px] bg-[#f7f7f7]" />
 
         <p className="absolute top-[2948px] left-[354px] [font-family:'Inter',Helvetica] font-bold text-[#ef7f1a] text-[40px] text-center tracking-[0] leading-[normal] whitespace-nowrap">

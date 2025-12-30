@@ -13,27 +13,27 @@ export const ProgramDeliverables = () => {
   return (
     <>
       {/* Mobile Version */}
-      <div className="block md:hidden w-full px-4 py-8 bg-[#f7f7f7]">
+      <div className="block md:hidden w-full px-5 py-10 bg-[#f7f7f7]">
         {/* Title */}
-        <div className="mb-8">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-4xl leading-tight">
+        <div className="mb-10">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-5xl leading-tight">
+          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[48px] leading-tight">
             Deliverables
           </div>
         </div>
 
         {/* Deliverables List */}
-        <div className="space-y-4 mb-8">
+        <div className="space-y-5 mb-10">
           {deliverables.map((item, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-[#ef7f1a] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+            <div key={index} className="flex items-start gap-3.5">
+              <div className="w-7 h-7 bg-[#ef7f1a] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-lg">
+              <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-[17px] leading-tight">
                 {item.text}
               </p>
             </div>
@@ -42,14 +42,54 @@ export const ProgramDeliverables = () => {
 
         {/* Apply Now Button */}
         <div className="flex justify-center">
-          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full">
+          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
             Apply Now
           </button>
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full px-8 py-16 bg-[#f7f7f7]">
+        {/* Title */}
+        <div className="text-center mb-14">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-6xl leading-tight">
+            Program
+          </h2>
+          <div className="[-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-7xl">
+            Deliverables
+          </div>
+        </div>
+
+        {/* Deliverables Grid */}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 gap-7 mb-14">
+            {deliverables.map((item, index) => (
+              <div key={index} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-5">
+                  <div className="w-9 h-9 bg-[#ef7f1a] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-xl leading-tight">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Apply Now Button */}
+          <div className="flex justify-center">
+            <button className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="top-[5304px] left-[39px] absolute [font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[74px] text-center tracking-[0] leading-[normal]">
           Program
         </div>

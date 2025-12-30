@@ -50,14 +50,53 @@ export const TrustedSchools = () => {
 
         {/* Apply Now Button */}
         <div className="flex justify-center">
-          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full">
+          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full px-6 py-12 bg-white">
+        {/* Title */}
+        <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center mb-12 leading-tight">
+          Trusted by Students from 100+ Schools Globally
+        </h2>
+
+        {/* Schools Logos Grid - Row 1 */}
+        <div className="flex justify-center items-center gap-8 mb-8">
+          {schoolsRow1.map((school, index) => (
+            <img
+              key={index}
+              src={school.src}
+              alt={school.alt}
+              className="w-20 h-20 object-contain"
+            />
+          ))}
+        </div>
+
+        {/* Schools Logos Grid - Row 2 */}
+        <div className="flex justify-center items-center flex-wrap gap-6 mb-12">
+          {schoolsRow2.map((school, index) => (
+            <img
+              key={index}
+              src={school.src}
+              alt={school.alt}
+              className="w-18 h-18 object-contain"
+            />
+          ))}
+        </div>
+
+        {/* Apply Now Button */}
+        <div className="flex justify-center">
+          <button className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
             Apply Now
           </button>
         </div>
       </div>
 
       {/* Desktop Version */}
-<div className="hidden md:block">
+      <div className="hidden lg:block">
 
   <p className="absolute top-[8553px] left-[489px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center">
     Trusted by Students from<br />100+ Schools Globally
@@ -87,7 +126,7 @@ export const TrustedSchools = () => {
   </div>
 
   <div className="absolute top-[9020px] left-0 right-0 flex justify-center">
-    <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-14 rounded-full">
+    <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-14 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
       Apply Now
     </button>
   </div>

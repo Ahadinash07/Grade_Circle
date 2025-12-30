@@ -46,17 +46,61 @@ export const Footer = () => {
         </div>
       </section>
 
+      {/* Tablet Layout */}
+      <section className="hidden md:block lg:hidden">
+        {/* Program Fee Section */}
+        <div className="bg-white px-6 py-12 text-center">
+          <div className="max-w-md mx-auto">
+            <div className="text-black text-2xl mb-4">Program Fee:</div>
+            <div className="text-black text-3xl font-bold mb-8">
+              INR <span className="text-[#0e416f]">17,500 + 18% GST</span>
+            </div>
+            
+            <div className="text-black text-2xl mb-4">Next Cohorts Starting:</div>
+            <div className="text-black text-2xl">
+              <span className="font-bold">Jan & Feb</span> (Weekends)
+            </div>
+          </div>
+        </div>
+
+        {/* Certificate Image */}
+        <div className="bg-white px-6 py-12 flex justify-center">
+          <img
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/image-6-1.png"
+            alt="Sample Certificate"
+            className="w-full max-w-md h-auto rounded-lg shadow-lg"
+          />
+        </div>
+
+        {/* Footer */}
+        <div className="bg-[#122e6c] py-12 px-6 text-center">
+          <p className="text-white text-lg mb-6">
+            info@mygradcircle.com | www.mygradcircle.com
+          </p>
+          
+          <div className="text-white text-lg mb-6">
+            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
+            <span className="mx-4">|</span>
+            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
+          </div>
+          
+          <p className="text-white/70 text-sm">
+            © Copyright GradCircle, All rights reserved 2025.
+          </p>
+        </div>
+      </section>
+
       {/* Desktop Layout */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="absolute top-[10600px] left-0 w-full h-[200px] bg-[#122e6c]">
           <p className="absolute top-[50px] left-1/2 transform -translate-x-1/2 text-white text-lg text-center">
             info@mygradcircle.com | www.mygradcircle.com
           </p>
           
           <div className="absolute top-[90px] left-1/2 transform -translate-x-1/2 text-white text-base text-center">
-            <a href="#" className="underline">Terms of Use</a>
+            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
             <span className="mx-4">|</span>
-            <a href="#" className="underline">Privacy Notice</a>
+            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
           </div>
           
           <p className="absolute top-[140px] left-1/2 transform -translate-x-1/2 text-white/70 text-sm text-center">

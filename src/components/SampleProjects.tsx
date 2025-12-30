@@ -46,8 +46,47 @@ export const SampleProjects = () => {
         </div>
       </section>
 
+      {/* Tablet Layout */}
+      <section className="hidden md:block lg:hidden px-6 py-12 bg-white max-w-4xl mx-auto">
+        {/* Testimonial Quote */}
+        <div className="mb-10 text-center">
+          <div className="text-[#ef7f1a] text-5xl font-bold leading-none mb-4 inline-block">"</div>
+          <div className="bg-[#f5f5f5] p-6 rounded-lg inline-block max-w-md">
+            <p className="italic text-[#122e6c] text-lg leading-relaxed">
+              Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+              <span className="not-italic font-bold text-[#ef7f1a]"> – Sara,</span>
+              <span className="not-italic"> Prometheus School, Noida</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Sample Projects Title */}
+        <h2 className="font-bold text-[#0e416f] text-4xl mb-4 text-center">Sample Projects</h2>
+        
+        <p className="text-black text-lg mb-8 leading-relaxed text-center">
+          Below are examples of real-world problem statements students have tackled, fostering creativity, critical thinking, and industry-relevant skills.
+        </p>
+
+        {/* Projects List */}
+        <div className="space-y-6">
+          {projects.map((project, index) => (
+            <div key={index} className="flex items-start gap-4">
+              <img
+                className="w-8 h-8 mt-1 flex-shrink-0"
+                alt="Check mark"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
+              />
+              <div>
+                <h3 className="font-bold text-[#ef7f1a] text-xl">{project.title}</h3>
+                <p className="text-black text-lg leading-relaxed">{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Desktop Layout */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="absolute top-[9384px] left-[88px] w-[310px] h-[57px] bg-white" />
 
         <div className="absolute top-[9391px] left-24 [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">

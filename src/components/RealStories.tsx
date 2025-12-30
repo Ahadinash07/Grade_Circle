@@ -114,8 +114,82 @@ export const RealStories = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full">
+        {/* Sample Profiles Section */}
+        <div className="bg-[#f7f7f7] px-6 py-12">
+          <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-black text-4xl text-center mb-12">
+            Sample Profiles of Industry Mentors
+          </h2>
+
+          {/* Mentor Cards */}
+          <div className="flex justify-center gap-8 mb-12">
+            {mentors.map((mentor, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="relative mb-4">
+                  <span className="absolute -top-3 left-0 bg-red-600 text-white text-sm px-3 py-1 rounded font-bold">
+                    {mentor.badge}
+                  </span>
+                  <img
+                    src={mentor.image}
+                    alt={mentor.name}
+                    className="w-32 h-32 rounded-full border-4 border-[#ef7f1a] object-cover"
+                  />
+                </div>
+                <h3 className="[font-family:'Inter',Helvetica] font-extrabold text-[#122e6c] text-lg text-center">
+                  {mentor.name}
+                </h3>
+                <p className="[font-family:'Inter',Helvetica] font-normal text-[#122e6c] text-sm text-center leading-tight">
+                  {mentor.title}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Stats Banner */}
+          <div className="bg-[#122e6c] rounded-lg p-6 flex items-center justify-center gap-8 max-w-md mx-auto">
+            <div className="text-center">
+              <div className="text-[#ef7f1a] font-bold text-4xl">20+</div>
+              <div className="text-white text-sm">UNIQUE INDUSTRIES/<br />FUNCTIONS</div>
+            </div>
+            <div className="text-white font-bold text-4xl">FROM</div>
+            <div className="text-center">
+              <div className="text-white font-bold text-4xl">100+</div>
+              <div className="text-white text-sm">MENTORS</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Real Stories Title */}
+        <div className="px-6 py-12 bg-white">
+          <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center mb-8">
+            Real Stories | Real Skills | Real Impact
+          </h2>
+
+          {/* Testimonial Card */}
+          <div className="max-w-2xl mx-auto">
+            <div className="relative">
+              {/* Quote Mark */}
+              <div className="text-[#122e6c] text-[120px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-6 left-0">
+                "
+              </div>
+              
+              <div className="border-2 border-[#ef7f1a] rounded-2xl p-8 pt-16 bg-white">
+                <div className="text-black text-2xl mb-4">Learning by Doing</div>
+                <p className="[font-family:'Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-xl leading-relaxed mb-6">
+                  Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                </p>
+                <p className="text-[#ef7f1a] text-lg">
+                  <span className="font-bold">– Sara,</span> Prometheus School, Noida
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <p className="absolute top-[7618px] left-[386px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
           Real Stories | Real Skills | Real Impact
         </p>

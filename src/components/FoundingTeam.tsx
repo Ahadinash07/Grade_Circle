@@ -63,8 +63,37 @@ export const FoundingTeam = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full px-6 py-12 bg-white">
+        {/* Title */}
+        <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-5xl text-center mb-12">
+          Founding Team
+        </h2>
+
+        {/* Team Members Grid */}
+        <div className="grid grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="text-center">
+              <div className="mb-6">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-48 h-48 object-cover rounded-full mx-auto border-4 border-[#122e6c]"
+                />
+              </div>
+              <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-2xl mb-2">
+                {member.name}
+              </h3>
+              <p className="[font-family:'Inter',Helvetica] font-normal text-black text-lg leading-tight">
+                {member.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <p className="absolute top-[6189px] left-[515px] w-[293px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
           Founding Team
         </p>

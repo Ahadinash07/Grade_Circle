@@ -13,13 +13,13 @@ export const Testimonials = () => {
         {/* Testimonial Card */}
         <div className="relative">
           {/* Quote Mark */}
-          <div className="text-[#122e6c] text-[120px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal leading-none -mb-12 ml-2">
-            “
+          <div className="text-[#122e6c] text-[100px] [font-family:'Georgia',serif] font-bold leading-none -mb-10 ml-1">
+            "
           </div>
           
           {/* Testimonial Box */}
-          <div className="border border-[#122e6c] rounded-2xl p-6 ml-4">
-            <p className="[font-family:'Montserrat',Helvetica] font-normal text-transparent text-xl leading-relaxed">
+          <div className="border-2 border-[#122e6c] rounded-2xl p-6 ml-4 shadow-sm bg-white">
+            <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
               <span className="font-semibold italic text-[#f36a1e]">
                 Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
               </span>
@@ -30,8 +30,37 @@ export const Testimonials = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full bg-white py-12 px-6">
+        {/* 100+ Mentors Text */}
+        <p className="[font-family:'Inter',Helvetica] font-bold text-[#ef7f1a] text-3xl text-center mb-12">
+          100+ Mentors | 20+ Career Pathways
+        </p>
+
+        {/* Testimonial Card */}
+        <div className="max-w-2xl mx-auto">
+          <div className="relative">
+            {/* Quote Mark */}
+            <div className="text-[#122e6c] text-[140px] [font-family:'Georgia',serif] font-bold leading-none -mb-14 ml-2">
+              "
+            </div>
+            
+            {/* Testimonial Box */}
+            <div className="border-2 border-[#122e6c] rounded-3xl p-8 ml-8 bg-white shadow-md">
+              <p className="[font-family:'Montserrat',Helvetica] font-normal text-2xl leading-relaxed">
+                <span className="font-semibold italic text-[#f36a1e]">
+                  Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                </span>
+                <span className="font-bold text-[#122e6c] text-xl"> – Sara,</span>
+                <span className="text-black text-xl"> Prometheus School, Noida</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="absolute top-[2089px] left-[50px] w-[1340px] h-[961px] rounded-[20px] border border-solid border-[#122e6c]" />
         <div className="absolute top-[3109px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
         <p className="absolute top-[3135px] left-[188px] w-[1148px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">

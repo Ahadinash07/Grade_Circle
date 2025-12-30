@@ -16,8 +16,21 @@ export const StudentExperiences = () => {
         </div>
       </section>
 
+      {/* Tablet Layout */}
+      <section className="hidden md:block lg:hidden px-6 py-12 bg-white max-w-4xl mx-auto">
+        <h2 className="font-bold text-[#122e6c] text-4xl text-center mb-8">Student Experiences</h2>
+        
+        <div className="rounded-2xl border-4 border-[#122e6c] p-6">
+          <img
+            className="w-full h-auto rounded-xl object-cover"
+            alt="Student Experience Video"
+            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-44.png"
+          />
+        </div>
+      </section>
+
       {/* Desktop Layout */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <img
           className="absolute top-[4578px] left-[215px] w-[960px] h-[540px] object-cover"
           alt="Rectangle"

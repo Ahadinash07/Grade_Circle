@@ -90,8 +90,44 @@ export const CareerStreams = () => {
         </div>
       </div>
 
+      {/* Tablet Version */}
+      <div className="hidden md:block lg:hidden w-full bg-[#f7f7f7] py-12">
+        {/* Title */}
+        <div className="px-6 mb-12">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-4xl text-center leading-tight">
+            Sample Career Streams & Mentor Backgrounds
+          </h2>
+        </div>
+
+        {/* Career Streams */}
+        <div className="space-y-0 max-w-6xl mx-auto">
+          {careerData.map((stream, index) => (
+            <div key={index}>
+              {/* Category Header */}
+              <div className="bg-[#122e6c] py-4 px-6 border-l-4 border-[#ef7f1a]">
+                <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
+                  {stream.title}
+                </span>
+              </div>
+              
+              {/* Logos */}
+              <div className="bg-white py-8 px-6 flex items-center justify-center flex-wrap gap-6">
+                {stream.logos.map((logo, logoIndex) => (
+                  <img
+                    key={logoIndex}
+                    className="h-12 w-auto object-contain max-w-[100px]"
+                    alt={logo.alt}
+                    src={logo.src}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Desktop Version - Original */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div className="absolute top-[1969px] left-0 w-[1440px] h-[1373px] bg-[#f7f7f7]" />
 
         <p className="absolute top-[2010px] left-[422px] z-20 [font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center tracking-[0] leading-[normal] bg-[#f7f7f7]">

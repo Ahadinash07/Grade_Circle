@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 export const ContactForm = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -19,8 +21,35 @@ export const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+
+    // Basic validation
+    if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
+      toast({
+        title: "Validation Error",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Here you would typically send the form data to your backend
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your message. We'll get back to you soon.",
+    });
+
+    // Reset form
     setFormData({
       firstName: '',
       lastName: '',
@@ -31,17 +60,17 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full md:w-[500px] h-auto md:h-[560px] items-start gap-6 md:gap-[41px] px-5 md:px-[37px] py-8 md:py-[41px] bg-[#000000f5] rounded-[30px] md:rounded-[50px] border border-solid border-black">
-      <div className="flex flex-col w-full md:w-[426px] items-start gap-2 relative">
-        <div className="relative w-full [font-family:'Inter',Helvetica] font-bold text-white text-2xl md:text-[32px] tracking-[0] leading-tight">
+    <div className="flex flex-col w-full md:w-full md:max-w-[540px] lg:w-[500px] h-auto md:min-h-[580px] items-start gap-5 md:gap-[38px] px-5 md:px-[35px] py-7 md:py-[38px] bg-[#000000f5] rounded-[28px] md:rounded-[45px] border border-solid border-black shadow-lg mx-auto">
+      <div className="flex flex-col w-full items-start gap-2 relative">
+        <div className="relative w-full [font-family:'Inter',Helvetica] font-bold text-white text-[26px] md:text-[30px] tracking-[0] leading-tight">
           Connect With An Expert
         </div>
-        <p className="relative w-full opacity-80 [font-family:'Inter',Helvetica] font-normal text-white text-sm md:text-base tracking-[-0.16px] leading-normal">
+        <p className="relative w-full opacity-80 [font-family:'Inter',Helvetica] font-normal text-white text-[14px] md:text-[15px] tracking-[-0.16px] leading-normal">
           Let's discuss your plans and find the projects most suitable to your goals
         </p>
       </div>
       
-      <form onSubmit={handleSubmit} className="flex flex-col w-full md:w-[426px] items-start gap-3 md:gap-3.5 relative flex-1 pb-5 md:pb-10">
+      <form onSubmit={handleSubmit} className="flex flex-col w-full items-start gap-3 md:gap-3.5 relative flex-1">
         <div className="flex flex-col md:flex-row items-start gap-3 md:gap-3.5 relative self-stretch w-full">
           <input
             type="text"
@@ -49,7 +78,7 @@ export const ContactForm = () => {
             value={formData.firstName}
             onChange={handleChange}
             placeholder="First Name"
-            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
+            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
             required
           />
           <input
@@ -58,7 +87,7 @@ export const ContactForm = () => {
             value={formData.lastName}
             onChange={handleChange}
             placeholder="Last Name"
-            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
+            className="flex flex-col items-start justify-center gap-2.5 px-3.5 py-3 relative w-full md:flex-1 bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
             required
           />
         </div>
@@ -69,7 +98,7 @@ export const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
+          className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
         
@@ -79,7 +108,7 @@ export const ContactForm = () => {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99]"
+          className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
         
@@ -88,15 +117,15 @@ export const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
-          className="flex flex-col h-[100px] md:h-[111px] items-start gap-2.5 px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-[#ffffff99] text-[15px] tracking-[-0.15px] leading-normal resize-none placeholder:text-[#ffffff99]"
+          className="flex flex-col h-[100px] md:h-[111px] items-start gap-2.5 px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal resize-none placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
         
         <button
           type="submit"
-          className="flex items-center justify-center gap-2.5 px-2.5 py-3 relative self-stretch w-full rounded-[5px] bg-gradient-to-r from-[#ef7f1a] to-[#ef7f1a] hover:opacity-90 transition-opacity"
+          className="flex items-center justify-center gap-2.5 px-2.5 py-3.5 relative self-stretch w-full rounded-[5px] bg-[#ef7f1a] hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
         >
-          <span className="relative [font-family:'Inter',Helvetica] font-medium text-white text-[15px] tracking-[-0.15px] leading-normal whitespace-nowrap">
+          <span className="relative [font-family:'Inter',Helvetica] font-semibold text-white text-[15px] tracking-[-0.15px] leading-normal whitespace-nowrap">
             Submit
           </span>
         </button>
