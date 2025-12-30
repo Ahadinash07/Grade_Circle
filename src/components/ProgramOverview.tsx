@@ -215,7 +215,7 @@ export const ProgramOverview = () => {
           Overview
         </div>
 
-        <div className="inline-flex items-center justify-center absolute top-[1362px] left-[calc(50.00%_-_46px)]">
+        <div className="inline-flex items-center justify-center absolute top-[1370px] left-[673px]">
           <img
             className="relative w-[73px] h-[73px] object-cover"
             alt="Pg real world"
@@ -228,7 +228,7 @@ export const ProgramOverview = () => {
           </p>
         </div>
 
-        <div className="inline-flex items-center justify-center absolute top-[1444px] left-[673px]">
+        <div className="inline-flex items-center justify-center absolute top-[1450px] left-[673px]">
           <img
             className="relative w-[73px] h-[73px] object-cover"
             alt="Pg certificate"
@@ -241,7 +241,7 @@ export const ProgramOverview = () => {
           </p>
         </div>
 
-        <div className="inline-flex items-end absolute top-[1539px] left-[673px]">
+        <div className="inline-flex items-end absolute top-[1530px] left-[673px]">
           <img
             className="relative w-[73px] h-[73px] object-cover"
             alt="Pg certificate"
@@ -254,7 +254,7 @@ export const ProgramOverview = () => {
           </p>
         </div>
 
-        <div className="inline-flex items-center justify-center absolute top-[1636px] left-[673px]">
+        <div className="inline-flex items-center justify-center absolute top-[1610px] left-[673px]">
           <img
             className="relative w-[73px] h-[73px] object-cover"
             alt="Pg clarity on job"

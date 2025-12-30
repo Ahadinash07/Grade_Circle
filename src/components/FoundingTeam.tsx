@@ -94,11 +94,11 @@ export const FoundingTeam = () => {
 
       {/* Desktop Version - Original */}
       <div className="hidden lg:block">
-        <p className="absolute top-[6189px] left-[515px] w-[293px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
+        <p className="absolute top-[6189px] left-[525px] w-[293px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
           Founding Team
         </p>
 
-        <div className="absolute top-[6450px] left-[35px] w-[1340px] h-[290px] bg-[#f7f7f7] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
+        <div className="absolute top-[6450px] left-[50px] w-[1340px] h-[290px] bg-[#f7f7f7] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
         <div className="absolute top-[6567px] left-20 w-[1182px] h-[113px] bg-[#f7f7f7] shadow-[0px_-1px_1px_#00000040]" />
 
         <div className="absolute top-[6590px] left-[105px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal] whitespace-nowrap">
