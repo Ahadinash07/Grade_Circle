@@ -24,14 +24,14 @@ export const FoundingTeam = () => {
   return (
     <>
       {/* Mobile Version */}
-      <div className="block md:hidden w-full px-4 py-8 bg-white">
+      <div className="block md:hidden w-full px-4 py-8 bg-slate-100">
         {/* Title */}
         <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-3xl text-center mb-6">
           Founding Team
         </h2>
 
         {/* Team Member Card */}
-        <div className="border-2 border-[#122e6c] rounded-lg p-4 mb-4">
+        <div className="p-4 mb-4">
           <img
             src={teamMembers[activeIndex].image}
             alt={teamMembers[activeIndex].name}

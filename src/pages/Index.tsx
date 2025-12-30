@@ -38,12 +38,12 @@ const Index = () => {
       <CareerStreams />
       <Testimonials />
       <ProgramStructure />
+      <StudentExperiences />
       <ProgramDeliverables />
       <FoundingTeam />
       <RealStories />
       <TrustedSchools />
       <SampleProjects />
-      <StudentExperiences />
       <Footer />
     </div>
   );
