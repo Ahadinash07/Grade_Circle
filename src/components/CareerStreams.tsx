@@ -58,7 +58,7 @@ export const CareerStreams = () => {
       <div className="block md:hidden w-full bg-[#f7f7f7] py-8">
         {/* Title */}
         <div className="px-4 mb-8">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-2xl text-center leading-tight">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-3xl text-center leading-tight">
             Sample Career Streams &<br />Mentor Backgrounds
           </h2>
         </div>
@@ -68,18 +68,18 @@ export const CareerStreams = () => {
           {careerData.map((stream, index) => (
             <div key={index}>
               {/* Category Header */}
-              <div className="bg-[#122e6c] py-3 px-4 border-l-4 border-[#ef7f1a]">
+              <div className="bg-[#122e6c] py-3 px-4">
                 <span className="[font-family:'Inter',Helvetica] font-bold text-white text-base">
                   {stream.title}
                 </span>
               </div>
               
               {/* Logos */}
-              <div className="bg-white py-6 px-4 flex items-center justify-around flex-wrap gap-4">
+              <div className="bg-white py-2 px-1 flex items-center justify-around flex-wrap gap-4">
                 {stream.logos.map((logo, logoIndex) => (
                   <img
                     key={logoIndex}
-                    className="h-10 w-auto object-contain max-w-[80px]"
+                    className="h-20 w-auto object-contain max-w-[80px]"
                     alt={logo.alt}
                     src={logo.src}
                   />
