@@ -15,7 +15,6 @@ export const Hero = () => {
         alt="Vector"
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-1.svg"
       />
-
       {/* Main Title - Added for Desktop */}
       <h1 className="hidden lg:block absolute top-[140px] left-[50px] [font-family:'Inter',Helvetica] font-bold text-white text-6xl italic leading-tight">
         Professional Immersion<br />Internship
@@ -32,12 +31,10 @@ export const Hero = () => {
             <h1 className="[font-family:'Inter',Helvetica] font-bold text-white text-5xl italic leading-tight mb-6">
               Professional Immersion<br className="hidden md:inline xl:hidden" /> Internship
             </h1>
-
             {/* Subtitle */}
             <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-8 underline decoration-1 underline-offset-4">
               Industry Mentors | Professional Projects | Hands-on Learning
             </p>
-
             {/* Program Fee */}
             <div className="mb-6">
               <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-2">
@@ -47,12 +44,10 @@ export const Hero = () => {
                 INR <span className="text-4xl">17,500 + 18% GST</span>
               </p>
             </div>
-
             {/* Next Cohorts */}
             <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-10">
               Next Cohorts Starting: <span className="font-bold">Jan & Feb</span> (Weekends)
             </p>
-
             {/* Contact Form */}
             <div className="w-full max-w-lg">
               <ContactForm />
@@ -62,40 +57,34 @@ export const Hero = () => {
       </div>
 
       {/* Mobile Background - Orange gradient */}
-      <div className="block md:hidden absolute top-0 left-0 w-full min-h-[550px] bg-gradient-to-b from-[#ef7f1a] to-[#d66a0a] z-0">
-        <div className="absolute inset-0 bg-[url('https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg')] bg-cover bg-center opacity-60"></div>
+      <div className="block md:hidden absolute top-0 left-0 w-full min-h-[600px] bg-gradient-to-b from-[#2c5f8d] via-[#ef7f1a] to-[#d66a0a] z-0">
+        <div className="absolute inset-0 bg-[url('https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg')] bg-cover bg-center opacity-40"></div>
       </div>
 
       {/* Mobile Content */}
-      <div className="block md:hidden relative z-10 pt-16 px-4 pb-6">
+      <div className="block md:hidden relative z-10 pt-20 px-5 pb-8">
         {/* Title */}
-        <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[28px] italic leading-[1.2] mt-2">
+        <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] italic leading-[1.15] mb-5">
           Professional Immersion<br />Internship
         </h1>
 
         {/* Subtitle with underline */}
-        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[15px] mt-5 underline decoration-1 underline-offset-2">
+        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[16px] leading-[1.4] mb-6 underline decoration-1 underline-offset-2">
           Industry Mentors | Professional<br />Projects | Hands-on Learning
         </p>
 
         {/* Program Fee */}
-        <div className="text-center mt-6">
-          <p className="[font-family:'Inter',Helvetica] font-normal text-white text-[17px] mb-1">
+        <div className="text-center mb-5">
+          <p className="[font-family:'Inter',Helvetica] font-normal text-white text-[18px] mb-1">
             Program Fee:
           </p>
-          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[20px]">
-            INR <span className="text-[24px]">17,500 + 18% GST</span>
+          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[22px]">
+            INR <span className="text-[28px]">17,500 + 18% GST</span>
           </p>
         </div>
 
-        {/* Next Cohorts - Added for mobile */}
-        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[17px] mt-5">
-          Next Cohorts Starting:<br />
-          <span className="font-bold">Jan & Feb</span> (Weekends)
-        </p>
-
         {/* Contact Form */}
-        <div className="mt-7 pb-6">
+        <div className="mt-6">
           <ContactForm />
         </div>
       </div>

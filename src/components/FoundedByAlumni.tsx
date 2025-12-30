@@ -3,39 +3,55 @@ import React from 'react';
 export const FoundedByAlumni = () => {
   return (
     <>
-      {/* Mobile Version */}
+      {/* Mobile Version - Updated to match your image */}
       <div className="block md:hidden w-full px-4 py-10">
-        {/* Yellow Header */}
+        {/* Yellow Header - Centered */}
         <div className="bg-[#f8b402] rounded-2xl py-7 px-5 mb-7 shadow-sm">
           <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[26px] text-center leading-tight">
             Founded by<br />Alumni from
           </h2>
         </div>
         
-        {/* Logos Container */}
-        <div className="bg-white rounded-xl shadow-md py-7 px-5 flex items-center justify-around gap-2">
-          <img
-            className="w-[72px] h-auto object-contain"
-            alt="Mit management sloan"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/mit-management-sloan-school.png"
-          />
-          <img
-            className="w-[56px] h-auto object-contain"
-            alt="Yale"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/yale.png"
-          />
-          <div className="flex flex-col items-center">
-            <img
-              className="w-[50px] h-[50px] object-contain"
-              alt="Iit"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/iit-delhi1.png"
-            />
-            <span className="text-[11px] font-bold text-[#0e416f] mt-1">IIT Delhi</span>
+        {/* Logos Container - With School Names */}
+        <div className="bg-white rounded-xl shadow-md py-1 px-1">
+          <div className="flex items-center justify-around mb-6">
+            {/* MIT Sloan Logo - BIGGER */}
+            <div className="flex flex-col items-center">
+              <div className="w-[100px] h-[50px] flex items-center justify-center mb-3">
+                <img
+                  className="w-full h-full object-contain"
+                  alt="MIT Sloan"
+                  src="https://c.animaapp.com/mjmwrwbp4K97wU/img/mit-management-sloan-school.png"
+                />
+              </div>
+            </div>
+            
+            {/* Yale University Logo - BIGGER */}
+            <div className="flex flex-col items-center">
+              <div className="w-[80px] h-[40px] flex items-center justify-center mb-3">
+                <img
+                  className="w-full h-full object-contain"
+                  alt="Yale University"
+                  src="https://c.animaapp.com/mjmwrwbp4K97wU/img/yale.png"
+                />
+              </div>
+            </div>
+            
+            {/* IIT Delhi Logo - BIGGER */}
+            <div className="flex flex-col items-center">
+              <div className="w-[70px] h-[70px] flex items-center justify-center mb-3">
+                <img
+                  className="w-full h-full object-contain"
+                  alt="IIT Delhi"
+                  src="https://c.animaapp.com/mjmwrwbp4K97wU/img/iit-delhi1.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Tablet Version */}
+      {/* Tablet Version - Updated with bigger logos */}
       <div className="hidden md:block lg:hidden w-full max-w-5xl mx-auto px-8 py-14">
         {/* Yellow Header */}
         <div className="bg-[#f8b402] rounded-3xl py-10 px-8 mb-10 shadow-md">
@@ -45,29 +61,40 @@ export const FoundedByAlumni = () => {
         </div>
         
         {/* Logos Container */}
-        <div className="bg-white rounded-2xl shadow-lg py-10 px-8 flex items-center justify-center gap-12">
-          <img
-            className="w-28 h-auto object-contain"
-            alt="Mit management sloan"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/mit-management-sloan-school.png"
-          />
-          <img
-            className="w-24 h-auto object-contain"
-            alt="Yale"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/yale.png"
-          />
+        <div className="bg-white rounded-2xl shadow-lg py-12 px-8 flex items-center justify-center gap-16">
           <div className="flex flex-col items-center">
-            <img
-              className="w-20 h-20 object-contain"
-              alt="Iit"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/iit-delhi1.png"
-            />
-            <span className="text-base font-bold text-[#0e416f] mt-2">IIT Delhi</span>
+            <div className="w-[140px] h-[70px] flex items-center justify-center mb-4">
+              <img
+                className="w-full h-full object-contain"
+                alt="MIT Sloan"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/mit-management-sloan-school.png"
+              />
+            </div>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-[110px] h-[55px] flex items-center justify-center mb-4">
+              <img
+                className="w-full h-full object-contain"
+                alt="Yale University"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/yale.png"
+              />
+            </div>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <div className="w-[100px] h-[100px] flex items-center justify-center mb-4">
+              <img
+                className="w-full h-full object-contain"
+                alt="IIT Delhi"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/iit-delhi1.png"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Desktop Version - Improved */}
+      {/* Desktop Version - Original - NO CHANGES */}
       <div className="hidden lg:block">
         <div className="flex flex-col w-[998px] items-center justify-center gap-6 pt-10 pb-[63px] px-6 absolute top-[671px] left-[206px] bg-[#f8b402] rounded-2xl shadow-md">
           <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[40px] text-center tracking-[0] leading-[normal] whitespace-nowrap">

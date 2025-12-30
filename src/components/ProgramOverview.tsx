@@ -4,27 +4,29 @@ export const ProgramOverview = () => {
   return (
     <>
       {/* Mobile Version */}
-      <div className="block md:hidden w-full">
+      <div className="block md:hidden w-full bg-white">
         {/* Program Overview Title */}
-        <div className="px-4 py-10">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
+        <div className="px-5 pt-10 pb-6">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[38px] leading-[1.1]">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[48px] leading-tight">
+          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px] leading-[1.1]">
             Overview
           </div>
         </div>
 
         {/* Orange Background Section with Description */}
-        <div className="bg-[#ef7f1a] px-5 py-7">
-          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[17px] leading-relaxed">
+        <div className="bg-[#ef7f1a] px-6 py-8">
+          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[18px] leading-[1.5]">
             Students from Grades 9-12 work with "active industry professionals" on simulated industry-focused projects.
           </p>
         </div>
 
-        {/* Student Image - Circular */}
-        <div className="flex justify-center -mt-3 relative z-10">
-          <div className="w-72 h-72 rounded-b-full overflow-hidden border-4 shadow-lg">
+        {/* Student Image - Circular with orange overlay */}
+        <div className="flex justify-center -mt-4 relative z-10">
+          <div className="w-full max-w-[420px] aspect-[3/4] rounded-b-[50%] overflow-hidden shadow-xl relative">
+            {/* Orange overlay on top */}
+            <div className="absolute top-0 left-0 right-0 h-56 bg-gradient-to-b from-[#ef7f1a] to-transparent z-10"></div>
             <img
               className="w-full h-full object-cover"
               alt="Pg image"
@@ -34,55 +36,63 @@ export const ProgramOverview = () => {
         </div>
 
         {/* Features List */}
-        <div className="px-5 py-8 space-y-6 bg-white">
-          <div className="flex items-center gap-4">
-            <img
-              className="w-12 h-12 object-cover flex-shrink-0"
-              alt="Pg real world"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-real-world.png"
-            />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
+        <div className="px-4 py-10 space-y-7 bg-white">
+          <div className="flex items-start gap-4">
+            <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-white">
+              <img
+                className="w-full h-full object-contain"
+                alt="Pg real world"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-real-world.png"
+              />
+            </div>
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[16px] leading-[1.4] flex-1 pt-6">
               Real-world simulated projects to build your skills profile
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <img
-              className="w-12 h-12 object-cover flex-shrink-0"
-              alt="Mentors"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
-            />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
+          <div className="flex items-start gap-4">
+            <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-white">
+              <img
+                className="w-full h-full object-contain"
+                alt="Mentors"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
+              />
+            </div>
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[16px] leading-[1.4] flex-1 pt-6">
               Live engagement with mentors from Fortune-500 companies
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <img
-              className="w-12 h-12 object-cover flex-shrink-0"
-              alt="Pg certificate"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
-            />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
+          <div className="flex items-start gap-4">
+            <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-white">
+              <img
+                className="w-full h-full object-contain"
+                alt="Pg certificate"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-certificate.png"
+              />
+            </div>
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[16px] leading-[1.4] flex-1 pt-6">
               Certificate & Letter of Recommendation from industry mentors
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <img
-              className="w-12 h-12 object-cover flex-shrink-0"
-              alt="Pg clarity on job"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-clarity-on-job.png"
-            />
-            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[15px] leading-tight flex-1">
+          <div className="flex items-start gap-4">
+            <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-white">
+              <img
+                className="w-full h-full object-contain"
+                alt="Pg clarity on job"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-2-clarity-on-job.png"
+              />
+            </div>
+            <p className="[font-family:'Inter',Helvetica] font-bold text-[#3d3d3d] text-[16px] leading-[1.4] flex-1 pt-6">
               Clarity on job roles and responsibilities
             </p>
           </div>
 
           {/* Apply Now Button */}
-          <div className="flex justify-center pt-4">
-            <a href="#contact-form" className="bg-[#ef7f1a] rounded-full px-12 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
-              <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
+          <div className="flex justify-center pt-6">
+            <a href="#contact-form" className="bg-[#ef7f1a] rounded-full px-16 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-lg inline-flex items-center justify-center">
+              <span className="[font-family:'Inter',Helvetica] font-bold text-white text-[20px]">
                 Apply Now
               </span>
             </a>
