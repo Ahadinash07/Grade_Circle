@@ -8,13 +8,15 @@ export const RealStories = () => {
       name: "Nobin Mattam",
       title: "Talent Acquisition Lead, TESCO",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png",
-      badge: "TESCO"
+      badge: "TESCO",
+      badgeImage: "/Tesco.png"
     },
     {
       name: "Satyanshu Singh",
       title: "Filmfare Award Winner & Netflix Fame Writer and Director",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png",
-      badge: "NETFLIX"
+      badge: "NETFLIX",
+      badgeImage: "/Netfilx.png"
     }
   ];
 
@@ -42,13 +44,15 @@ export const RealStories = () => {
             {mentors.map((mentor, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="relative">
-                  <span className="absolute -top-2 left-0 bg-red-600 text-white text-xs px-2 py-1 rounded font-bold">
-                    {mentor.badge}
-                  </span>
+                  <img
+                    src={mentor.badgeImage}
+                    alt={mentor.badge}
+                    className="absolute -top-3 -left-4 w-16 h-10 rounded bg-white object-contain z-10"
+                  />
                   <img
                     src={mentor.image}
                     alt={mentor.name}
-                    className="w-32 h-32 rounded-full border-4 border-[#ef7f1a] object-cover"
+                    className="w-32 h-32"
                   />
                 </div>
                 <h3 className="[font-family:'Inter',Helvetica] font-extrabold text-[#122e6c] text-sm text-center mt-2">
@@ -64,17 +68,34 @@ export const RealStories = () => {
           {/* Stats Banner */}
           <div className="bg-[#122e6c] rounded-lg p-4 flex items-center justify-center gap-4">
             <div className="text-center">
-              <div className="text-[#ef7f1a] font-bold text-3xl">20+</div>
+              <div className="text-white font-bold text-4xl">20+</div>
               <div className="text-white text-xs">UNIQUE INDUSTRIES/<br />FUNCTIONS</div>
             </div>
             <div className="text-white font-bold">FROM</div>
             <div className="text-center">
-              <div className="text-white font-bold text-3xl">100+</div>
+              <div className="text-white font-bold text-4xl">100+</div>
               <div className="text-white text-xs">MENTORS</div>
             </div>
           </div>
+          <div className="relative mt-9">
+          {/* Quote Mark */}
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+             “
+          </div>
+          
+          {/* Testimonial Box */}
+          <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
+            <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
+              <span className="font-semibold italic text-[#f36a1e]">
+                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+              </span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
+              <span className="text-black text-lg"> Prometheus School, Noida</span>
+            </p>
+          </div>
         </div>
-
+        </div>
+            
         {/* Real Stories Title */}
         <div className="px-4 py-8 bg-white">
           <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-2xl text-center mb-6">
@@ -84,8 +105,8 @@ export const RealStories = () => {
           {/* Testimonial Card */}
           <div className="relative">
             {/* Quote Mark */}
-            <div className="text-[#122e6c] text-8xl [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-4 left-0">
-              "
+            <div className="text-[#122e6c] text-[200px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-9 -inset-4 bg-white h-[80px] w-[90px]">
+              “
             </div>
             
             <div className="border border-[#ef7f1a] rounded-lg p-6 pt-12">

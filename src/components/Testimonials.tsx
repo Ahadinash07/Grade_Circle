@@ -42,7 +42,7 @@ export const Testimonials = () => {
           <div className="relative">
             {/* Quote Mark */}
             <div className="text-[#122e6c] text-[140px] [font-family:'Georgia',serif] font-bold leading-none -mb-14 ml-2">
-              "
+              “
             </div>
             
             {/* Testimonial Box */}
