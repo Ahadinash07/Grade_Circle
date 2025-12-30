@@ -15,23 +15,30 @@ export const SampleProjects = () => {
   return (
     <>
       {/* Mobile Layout */}
-      <section className="block md:hidden px-6 py-12 bg-white">
+      <section className="block md:hidden px-6 py-12 mb-3 bg-white">
         {/* Testimonial Quote */}
-        <div className="mb-10">
-          <div className="text-[#ef7f1a] text-6xl font-bold leading-none mb-4">"</div>
-          <div className="bg-[#f5f5f5] p-6 rounded-lg">
-            <p className="italic text-[#122e6c] text-lg leading-relaxed">
-              Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
-              <span className="not-italic font-bold text-[#ef7f1a]"> – Sara,</span>
-              <span className="not-italic"> Prometheus School, Noida</span>
+        <div className="relative">
+          {/* Quote Mark */}
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+             “
+          </div>
+          
+          {/* Testimonial Box */}
+          <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
+            <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
+              <span className="font-semibold italic text-[#f36a1e]">
+                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+              </span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
+              <span className="text-black text-lg"> Prometheus School, Noida</span>
             </p>
           </div>
         </div>
 
         {/* Sample Projects Title */}
-        <h2 className="font-bold text-[#0e416f] text-3xl mb-4">Sample Projects</h2>
+        <h2 className="font-bold text-[#0e416f] text-4xl mt-8 mb-4">Sample Projects</h2>
         
-        <p className="text-black text-base mb-6 leading-relaxed">
+        <p className="text-black text-lg mb-6 leading-relaxed">
           Below are examples of real-world problem statements students have tackled, fostering creativity, critical thinking, and industry-relevant skills.
         </p>
 
@@ -39,8 +46,8 @@ export const SampleProjects = () => {
         <div className="space-y-6">
           {projects.map((project, index) => (
             <div key={index}>
-              <h3 className="font-bold text-[#ef7f1a] text-lg">{project.title}</h3>
-              <p className="text-black text-base leading-relaxed">{project.description}</p>
+              <h3 className="font-bold text-[#ef7f1a] text-xl">{project.title}</h3>
+              <p className="text-black text-lg leading-relaxed">{project.description}</p>
             </div>
           ))}
         </div>
