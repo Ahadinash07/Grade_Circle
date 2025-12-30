@@ -10,7 +10,7 @@ export const ProgramOverview = () => {
           <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[38px] leading-[1.1]">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px] leading-[1.1]">
+          <div className="[-webkit-text-stroke:1.2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px] leading-[1.1]">
             Overview
           </div>
         </div>

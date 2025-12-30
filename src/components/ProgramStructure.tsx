@@ -16,10 +16,10 @@ export const ProgramStructure = () => {
 
         {/* Program Structure Title */}
         <div className="mb-6">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-3xl leading-tight">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[38px] -mb-3 leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-4xl">
+          <div className="[-webkit-text-stroke:1.2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px]">
             Structure
           </div>
         </div>
