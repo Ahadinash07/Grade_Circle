@@ -16,6 +16,11 @@ export const Hero = () => {
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-1.svg"
       />
 
+      {/* Main Title - Added for Desktop */}
+      <h1 className="hidden lg:block absolute top-[140px] left-[50px] [font-family:'Inter',Helvetica] font-bold text-white text-6xl italic leading-tight">
+        Professional Immersion<br />Internship
+      </h1>
+
       {/* Tablet Background */}
       <div className="hidden md:block lg:hidden relative">
         <div className="w-full min-h-[700px] bg-gradient-to-b from-[#ef7f1a] to-[#d66a0a] relative overflow-hidden py-12">
@@ -96,11 +101,11 @@ export const Hero = () => {
       </div>
 
       {/* Desktop Content - Improved positioning */}
-      <p className="hidden lg:block absolute top-[270px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-[18px] tracking-[0] leading-[normal] underline decoration-1 underline-offset-2">
+      <p className="hidden lg:block absolute top-[290px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-[18px] tracking-[0] leading-[normal] underline decoration-1 underline-offset-2">
         Industry Mentors | Professional Projects | Hands-on Learning
       </p>
       
-      <p className="hidden lg:block absolute top-[315px] left-[50px] [font-family:'Inter',Helvetica] font-normal text-white text-[22px] tracking-[0] leading-[normal]">
+      <p className="hidden lg:block absolute top-[335px] left-[50px] [font-family:'Inter',Helvetica] font-normal text-white text-[22px] tracking-[0] leading-[normal]">
         <span className="font-bold">4-week</span>
         <span className="[font-family:'Inter',Helvetica] font-normal text-white text-[22px] tracking-[0]">
           , mentor-led virtual internship with <br />
@@ -108,14 +113,14 @@ export const Hero = () => {
         </span>
       </p>
       
-      <p className="hidden lg:block absolute top-[392px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
+      <p className="hidden lg:block absolute top-[412px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
         <span className="[font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0]">
           Program Fee: INR{" "}
         </span>
         <span className="font-bold">17,500 + 18% GST</span>
       </p>
       
-      <p className="hidden lg:block absolute top-[446px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
+      <p className="hidden lg:block absolute top-[466px] left-[52px] [font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
         <span className="[font-family:'Inter',Helvetica] font-normal text-white text-2xl tracking-[0]">
           Next Cohorts Starting:{" "}
         </span>
