@@ -81,11 +81,11 @@ export const ProgramOverview = () => {
 
           {/* Apply Now Button */}
           <div className="flex justify-center pt-4">
-            <button className="bg-[#ef7f1a] rounded-full px-12 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+            <a href="#contact-form" className="bg-[#ef7f1a] rounded-full px-12 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
               <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
                 Apply Now
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -162,11 +162,11 @@ export const ProgramOverview = () => {
 
                 {/* Apply Now Button */}
                 <div className="flex justify-center pt-6">
-                  <button className="bg-[#ef7f1a] rounded-full px-16 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+                  <a href="#contact-form" className="bg-[#ef7f1a] rounded-full px-16 py-4 hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
                     <span className="[font-family:'Inter',Helvetica] font-bold text-white text-xl">
                       Apply Now
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -265,11 +265,11 @@ export const ProgramOverview = () => {
           </p>
         </div>
 
-        <div className="absolute top-[1746px] left-[683px] w-[291px] h-[86px] bg-[#ef7f1a] rounded-[50px]" />
+        <a href="#contact-form" className="absolute top-[1746px] left-[683px] w-[291px] h-[86px] bg-[#ef7f1a] rounded-[50px] flex items-center justify-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200" />
 
-        <div className="absolute top-[1774px] left-[766px] [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
+        <a href="#contact-form" className="absolute top-[1774px] left-[766px] [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal] pointer-events-none">
           Apply Now
-        </div>
+        </a>
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import { ContactForm } from './ContactForm';
 
 export const Hero = () => {
   return (
-    <>
+    <section id="contact-form">
       {/* Desktop Background Images */}
       <img
         className="hidden lg:block absolute top-0 left-0 w-full h-[740px] object-cover"
@@ -133,6 +133,6 @@ export const Hero = () => {
       <div className="hidden lg:block absolute top-[102px] left-[890px]">
         <ContactForm />
       </div>
-    </>
+    </section>
   );
 };

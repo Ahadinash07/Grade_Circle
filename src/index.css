@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scrolling for all screens and anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Scroll padding to account for fixed headers */
+html {
+  scroll-padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 40px;
+  }
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */

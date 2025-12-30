@@ -50,9 +50,9 @@ export const TrustedSchools = () => {
 
         {/* Apply Now Button */}
         <div className="flex justify-center">
-          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+          <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
             Apply Now
-          </button>
+          </a>
         </div>
       </div>
 
@@ -89,9 +89,9 @@ export const TrustedSchools = () => {
 
         {/* Apply Now Button */}
         <div className="flex justify-center">
-          <button className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+          <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
             Apply Now
-          </button>
+          </a>
         </div>
       </div>
 
@@ -126,9 +126,9 @@ export const TrustedSchools = () => {
   </div>
 
   <div className="absolute top-[9020px] left-0 right-0 flex justify-center">
-    <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-14 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+    <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-14 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
       Apply Now
-    </button>
+    </a>
   </div>
 
 </div>

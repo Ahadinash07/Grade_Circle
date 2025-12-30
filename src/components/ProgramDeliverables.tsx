@@ -42,9 +42,9 @@ export const ProgramDeliverables = () => {
 
         {/* Apply Now Button */}
         <div className="flex justify-center">
-          <button className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+          <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-xl py-4 px-12 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
             Apply Now
-          </button>
+          </a>
         </div>
       </div>
 
@@ -81,9 +81,9 @@ export const ProgramDeliverables = () => {
 
           {/* Apply Now Button */}
           <div className="flex justify-center">
-            <button className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+            <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-2xl py-6 px-16 rounded-full hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
               Apply Now
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -136,10 +136,10 @@ export const ProgramDeliverables = () => {
         <img className="top-[5813px] left-[329px] w-[195px] absolute h-[195px] object-cover" alt="Pg icon" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-3-icon-5.png" />
         <img className="top-[5813px] left-[670px] w-[194px] absolute h-[195px] object-cover" alt="Pg icon" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pg-3-icon-6.png" />
 
-        <div className="absolute top-[6055px] left-[535px] w-[345px] h-[86px] bg-[#ef7f1a] rounded-[50px]" />
-        <div className="top-[6084px] left-[645px] absolute [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
+        <a href="#contact-form" className="absolute top-[6055px] left-[535px] w-[345px] h-[86px] bg-[#ef7f1a] rounded-[50px] flex items-center justify-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200" />
+        <a href="#contact-form" className="top-[6084px] left-[645px] absolute [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal] pointer-events-none">
           Apply Now
-        </div>
+        </a>
       </div>
     </>
   );
