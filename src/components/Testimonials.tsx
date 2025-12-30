@@ -13,12 +13,12 @@ export const Testimonials = () => {
         {/* Testimonial Card */}
         <div className="relative">
           {/* Quote Mark */}
-          <div className="text-[#122e6c] text-[100px] [font-family:'Georgia',serif] font-bold leading-none -mb-10 ml-1">
-            "
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+             “
           </div>
           
           {/* Testimonial Box */}
-          <div className="border-2 border-[#122e6c] rounded-2xl p-6 ml-4 shadow-sm bg-white">
+          <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
             <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
               <span className="font-semibold italic text-[#f36a1e]">
                 Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.

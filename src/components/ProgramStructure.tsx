@@ -13,24 +13,6 @@ export const ProgramStructure = () => {
     <>
       {/* Mobile Version */}
       <div className="block md:hidden w-full bg-white py-8 px-4">
-        {/* Another Testimonial at top */}
-        <div className="relative mb-8">
-          {/* Quote Mark */}
-          <div className="text-[#122e6c] text-[120px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal leading-none -mb-12 ml-2">
-            "
-          </div>
-          
-          {/* Testimonial Box */}
-          <div className="border border-[#122e6c] rounded-2xl p-6 ml-4">
-            <p className="[font-family:'Montserrat',Helvetica] font-normal text-transparent text-xl leading-relaxed">
-              <span className="font-semibold italic text-[#f36a1e]">
-                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
-              </span>
-              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
-              <span className="text-black text-lg"> Prometheus School, Noida</span>
-            </p>
-          </div>
-        </div>
 
         {/* Program Structure Title */}
         <div className="mb-6">
@@ -66,7 +48,26 @@ export const ProgramStructure = () => {
             </div>
           ))}
         </div>
+      {/* Another Testimonial at top */}
+        <div className="relative mt-9">
+          {/* Quote Mark */}
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+             “
+          </div>
+          
+          {/* Testimonial Box */}
+          <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
+            <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
+              <span className="font-semibold italic text-[#f36a1e]">
+                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+              </span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
+              <span className="text-black text-lg"> Prometheus School, Noida</span>
+            </p>
+          </div>
+        </div>
       </div>
+      
 
       {/* Tablet Version */}
       <div className="hidden md:block lg:hidden w-full bg-white py-12 px-6">
