@@ -6,12 +6,12 @@ export const Hero = () => {
     <>
       {/* Desktop Background Images */}
       <img
-        className="hidden lg:block absolute top-0 left-0 w-[1440px] h-[740px] object-cover"
+        className="hidden lg:block absolute top-0 left-0 w-full h-[740px] object-cover"
         alt="Rectangle"
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
       />
       <img
-        className="hidden lg:block absolute top-[514px] left-0 w-[1447px] h-[266px]"
+        className="hidden lg:block absolute top-[514px] left-0 w-full h-[266px]"
         alt="Vector"
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-1.svg"
       />

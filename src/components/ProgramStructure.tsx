@@ -167,7 +167,7 @@ export const ProgramStructure = () => {
 
         <img className="absolute top-[3310px] left-[643px] w-[1165px] h-[860px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-3.svg" />
 
-        <img className="absolute top-[3426px] border rounded-l-full left-[843px] w-[597px] h-[775px] object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-3.png" />
+        <img className="absolute top-[3426px] border rounded-l-full left-[843px] w-[697px] h-[775px] bg-cover object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-3.png" />
 
         <div className="absolute top-[3505px] left-[47px] [-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-9xl text-center tracking-[0] leading-[normal]">
           Structure

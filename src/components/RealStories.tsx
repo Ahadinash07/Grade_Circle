@@ -197,7 +197,7 @@ export const RealStories = () => {
         <div className="absolute top-[6926px] left-[50px] w-[1340px] h-[378px] bg-[#f7f7f7] rounded-[20px]" />
         <div className="absolute top-[8719px] left-[50px] w-[1340px] h-[245px] bg-[#f7f7f7] rounded-[20px]" />
 
-        <img className="absolute top-[6968px] left-[130px] w-[151px] h-[151px] border-[3px] border-solid border-white object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-4.png" />
+        <img className="absolute top-[6968px] left-[130px] w-[151px] h-[151px] object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-4.png" />
         
         <div className="absolute top-[7134px] left-[142px] [font-family:'Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
           Rahul Shubham
@@ -210,8 +210,8 @@ export const RealStories = () => {
         <div className="absolute top-[7211px] left-[427px] w-[623px] h-[140px] bg-[#122e6c] rounded-[20px_20px_0px_0px]" />
 
         <img className="absolute top-[6960px] left-[91px] w-[79px] h-[71px] object-cover" alt="Rectangle" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-26.svg" />
-        <img className="absolute top-[6968px] left-[405px] w-[151px] h-[151px] border-[3px] border-solid border-white object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png" />
-        <img className="absolute top-[6968px] left-[721px] w-[151px] h-[151px] border-[3px] border-solid border-white object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png" />
+        <img className="absolute top-[6968px] left-[405px] w-[151px] h-[151px] object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png" />
+        <img className="absolute top-[6968px] left-[721px] w-[151px] h-[151px] object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png" />
 
         <div className="absolute top-[7134px] left-[415px] [font-family:'Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
           Nobin Mattam
@@ -230,7 +230,7 @@ export const RealStories = () => {
         <img className="absolute top-[6960px] left-[366px] w-[79px] h-[71px] object-cover" alt="Rectangle" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-41.svg" />
         <img className="absolute top-[6960px] left-[682px] w-[79px] h-[71px] object-cover" alt="Rectangle" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-42.svg" />
 
-        <img className="absolute top-[6968px] left-[1074px] w-[151px] h-[151px] border-[3px] border-solid border-white object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-7.png" />
+        <img className="absolute top-[6968px] left-[1074px] w-[151px] h-[151px] object-cover" alt="Ellipse" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-7.png" />
         <div className="absolute top-[7134px] left-[1100px] [font-family:'Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
           Rachita Rungta
         </div>
