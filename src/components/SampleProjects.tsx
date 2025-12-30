@@ -102,7 +102,7 @@ export const SampleProjects = () => {
         <p className="absolute top-[9559px] left-[143px] w-[1215px] [font-family:'Inter',Helvetica] font-normal text-black text-xl tracking-[0] leading-5">
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[0px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[5px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />
@@ -110,28 +110,28 @@ export const SampleProjects = () => {
           <span className="leading-10"> Develop a strategy for an Indian electric scooter brand to enter Southeast Asia.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[40px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[45px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           /> Equity Research:</span>
           <span className="leading-10"> Analyze a listed company and recommend a buy, hold, or sell rating with supporting valuation.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[80px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[85px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           /> Healthcare Innovation: </span>
           <span className="leading-10">Create a market-entry plan for a next-gen prenatal screening test in India.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[120px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[125px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           /> Litigation Strategy: </span>
           <span className="leading-10">Design a courtroom advocacy plan for a public interest case.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[160px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[165px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />
@@ -139,7 +139,7 @@ export const SampleProjects = () => {
           <span className="leading-10">Improve user experience for a wearable fitness device through interface and feature innovation.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[200px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[205px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />
@@ -147,7 +147,7 @@ export const SampleProjects = () => {
           <span className="leading-10">Build a fake news detection and sentiment analysis system for social media. <br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[240px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[245px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />
@@ -155,7 +155,7 @@ export const SampleProjects = () => {
           <span className="leading-10"> Uncover the truth behind "healthy" food labels through data and regulatory analysis.<br /></span>
           <span className="font-bold leading-10">
             <img
-            className={`absolute top-[280px] right-[1240px] w-[30px] h-10`}
+            className={`absolute top-[285px] right-[1235px] w-[30px] h-15`}
             alt="Check mark"
             src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png"
           />

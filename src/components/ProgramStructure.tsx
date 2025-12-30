@@ -157,11 +157,11 @@ export const ProgramStructure = () => {
           Personalized career pathway mapping
         </p>
 
-        <img className="top-[3856px] left-[81px] absolute w-[30px] h-10" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
-        <img className="top-[3906px] left-[81px] absolute w-[30px] h-10" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
-        <img className="top-[3958px] left-[81px] absolute w-[30px] h-10" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
-        <img className="top-[4007px] left-[81px] absolute w-[30px] h-10" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
-        <img className="top-[4057px] left-[81px] absolute w-[30px] h-10" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
+        <img className="top-[3860px] left-[81px] absolute w-[30px] h-15" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
+        <img className="top-[3910px] left-[81px] absolute w-[30px] h-15" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
+        <img className="top-[3962px] left-[81px] absolute w-[30px] h-15" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
+        <img className="top-[4011px] left-[81px] absolute w-[30px] h-15" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
+        <img className="top-[4061px] left-[81px] absolute w-[30px] h-15" alt="Check mark" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/check-mark-13.png" />
 
         <div className="absolute top-[3375px] left-[789px] w-[873px] h-[878px] bg-white rounded-[436.5px/439px] border-[20px] border-solid border-[#f36a1e]" />
 
