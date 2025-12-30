@@ -36,7 +36,7 @@ export const ProgramOverview = () => {
         </div>
 
         {/* Features List */}
-        <div className="px-4 py-10 space-y-7 bg-white">
+        <div className="px-4 py-6 space-y-3 bg-white">
           <div className="flex items-start gap-4">
             <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center bg-white">
               <img
