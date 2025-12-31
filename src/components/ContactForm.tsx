@@ -193,7 +193,7 @@ export const ContactForm = () => {
           placeholder="Phone Number"
           inputMode="numeric"
           pattern="[0-9]{10}"
-          maxLength="10"
+          maxLength={10}
           className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
