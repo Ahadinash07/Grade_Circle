@@ -31,6 +31,17 @@ export const ContactForm = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
+    
+    // For phone field, only allow numbers
+    if (name === 'phone') {
+      const numericValue = value.replace(/[^0-9]/g, '');
+      setFormData(prev => ({
+        ...prev,
+        [name]: numericValue
+      }));
+      return;
+    }
+    
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -58,6 +69,17 @@ export const ContactForm = () => {
       toast({
         title: "Invalid Email",
         description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Phone validation (at least 10 digits)
+    if (formData.phone && formData.phone.length < 10) {
+      toast({
+        title: "Invalid Phone Number",
+        description: "Please enter a valid phone number (at least 10 digits).",
         variant: "destructive",
       });
       setIsSubmitting(false);
@@ -158,6 +180,7 @@ export const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
+          pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
           className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
@@ -168,6 +191,9 @@ export const ContactForm = () => {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
+          inputMode="numeric"
+          pattern="[0-9]{10}"
+          maxLength="10"
           className="px-3.5 py-3 relative self-stretch w-full bg-[#ffffff0d] rounded-[5px] border border-solid border-[#ffffff33] [font-family:'Inter',Helvetica] font-normal text-white text-[15px] tracking-[-0.15px] leading-normal placeholder:text-[#ffffff99] focus:outline-none focus:border-[#ef7f1a] transition-colors"
           required
         />
