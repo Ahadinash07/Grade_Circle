@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { useToast } from '@/hooks/use-toast';
 
 export const ContactForm = () => {
@@ -10,6 +11,23 @@ export const ContactForm = () => {
     phone: '',
     message: ''
   });
+  const [utmParams, setUtmParams] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Extract UTM parameters from URL
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmData = {
+      utm_source: urlParams.get('utm_source') || '',
+      utm_medium: urlParams.get('utm_medium') || '',
+      utm_campaign: urlParams.get('utm_campaign') || '',
+      utm_term: urlParams.get('utm_term') || '',
+      utm_content: urlParams.get('utm_content') || '',
+      gclid: urlParams.get('gclid') || null,
+      fbclid: urlParams.get('fbclid') || null,
+    };
+    setUtmParams(utmData);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,8 +37,9 @@ export const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Basic validation
     if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
@@ -29,6 +48,7 @@ export const ContactForm = () => {
         description: "Please fill in all required fields.",
         variant: "destructive",
       });
+      setIsSubmitting(false);
       return;
     }
 
@@ -40,23 +60,63 @@ export const ContactForm = () => {
         description: "Please enter a valid email address.",
         variant: "destructive",
       });
+      setIsSubmitting(false);
       return;
     }
 
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. We'll get back to you soon.",
-    });
+    try {
+      // Combine first and last name
+      const fullName = `${formData.firstName.trim()} ${formData.lastName.trim()}`;
 
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+      // Prepare API payload
+      const payload = {
+        full_name: fullName,
+        email: formData.email.trim(),
+        phone: formData.phone.trim(),
+        message: formData.message.trim(),
+        product: "GradCircle_OTP Form_Small_SO",
+        lead_status: "new",
+        note: "Form submission from website",
+        timestamp: new Date().toISOString(),
+        ...utmParams // Include UTM parameters
+      };
+
+      // Send to API
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_BASE_URL}?access_token=${import.meta.env.VITE_API_ACCESS_TOKEN}`,
+        payload,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (response.data) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. We'll get back to you soon.",
+        });
+
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('API Error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -123,10 +183,11 @@ export const ContactForm = () => {
         
         <button
           type="submit"
-          className="flex items-center justify-center gap-2.5 px-2.5 py-3.5 relative self-stretch w-full rounded-[5px] bg-[#ef7f1a] hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
+          disabled={isSubmitting}
+          className="flex items-center justify-center gap-2.5 px-2.5 py-3.5 relative self-stretch w-full rounded-[5px] bg-[#ef7f1a] hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <span className="relative [font-family:'Inter',Helvetica] font-semibold text-white text-[15px] tracking-[-0.15px] leading-normal whitespace-nowrap">
-            Submit
+            {isSubmitting ? 'Sending...' : 'Submit'}
           </span>
         </button>
       </form>
