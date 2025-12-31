@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
 
   // 👇 Production build output folder
   build: {
-    outDir: "out",
+    outDir: "dist",
     emptyOutDir: true,
     sourcemap: false,
   },
