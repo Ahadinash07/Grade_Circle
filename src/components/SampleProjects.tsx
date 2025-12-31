@@ -19,7 +19,7 @@ export const SampleProjects = () => {
         {/* Testimonial Quote */}
         <div className="relative">
           {/* Quote Mark */}
-          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none  ml-1">
              “
           </div>
           

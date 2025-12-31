@@ -79,7 +79,7 @@ export const RealStories = () => {
           </div>
           <div className="relative mt-9">
           {/* Quote Mark */}
-          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Georgia',serif] font-bold leading-none  ml-1">
+          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none  ml-1">
              “
           </div>
           
@@ -105,7 +105,7 @@ export const RealStories = () => {
           {/* Testimonial Card */}
           <div className="relative">
             {/* Quote Mark */}
-            <div className="text-[#122e6c] text-[200px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-9 -inset-4 bg-white h-[80px] w-[90px]">
+            <div className="text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-7 -inset-4 bg-white h-[80px] w-[80px] font-bold ">
               “
             </div>
             
