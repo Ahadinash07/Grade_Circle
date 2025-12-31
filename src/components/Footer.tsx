@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <>
       {/* Mobile Layout */}
-      <section className="block md:hidden">
+      <section id="mobile-footer" className="block md:hidden">
         {/* Program Fee Section */}
         <div className="bg-white px-6 py-10">
           <div className="text-black text-xl mb-2">Program Fee:</div>
@@ -13,10 +13,13 @@ export const Footer = () => {
             INR <span className="text-[#0e416f]">17,500 + 18% GST</span>
           </div>
           
-          <div className="text-black text-xl mb-2">Next Cohorts Starting:</div>
-          <div className="text-black text-xl">
+          <div className="text-black text-xl mb-6">Next Cohorts Starting:</div>
+          <div className="text-black text-xl mb-8">
             <span className="font-bold">Jan & Feb</span> (Weekends)
           </div>
+
+          {/* Apply Now Button */}
+          
         </div>
 
         {/* Certificate Image */}
@@ -43,7 +46,14 @@ export const Footer = () => {
           <p className="text-white/70 text-xs mt-6">
             © Copyright GradCircle, All rights reserved 2025.
           </p>
+
+          
         </div>
+        <div className="flex justify-center">
+            <a href="#contact-form" className="bg-[#ef7f1a] text-white font-bold text-xl py-4 w-full text-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg">
+              Apply Now
+            </a>
+          </div>
       </section>
 
       {/* Tablet Layout */}

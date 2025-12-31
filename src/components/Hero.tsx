@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ContactForm } from './ContactForm';
 
 export const Hero = () => {
+  const [showFloatingButton, setShowFloatingButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const formSection = document.getElementById('contact-form');
+      const footerSection = document.getElementById('mobile-footer');
+      
+      if (formSection && footerSection) {
+        const formRect = formSection.getBoundingClientRect();
+        const footerRect = footerSection.getBoundingClientRect();
+        
+        const isFormVisible = formRect.top < window.innerHeight && formRect.bottom > 0;
+        const isFooterVisible = footerRect.top < window.innerHeight && footerRect.bottom > 0;
+        
+        setShowFloatingButton(!isFormVisible && !isFooterVisible);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial state
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <section id="contact-form">
       {/* Desktop Background Images */}
@@ -151,6 +174,16 @@ export const Hero = () => {
       <div className="hidden lg:block absolute top-[102px] left-[890px]">
         <ContactForm />
       </div>
+
+      {/* Floating Apply Now Button - Mobile Only */}
+      {showFloatingButton && (
+        <a
+          href="#contact-form"
+          className="block md:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#ef7f1a] text-white font-bold text-lg py-3 px-8 rounded-full shadow-lg hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-300 animate-bounce"
+        >
+          Apply Now
+        </a>
+      )}
     </section>
   );
 };
