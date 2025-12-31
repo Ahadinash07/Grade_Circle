@@ -104,12 +104,13 @@ export const Testimonials = () => {
         <div className="absolute top-[9413px] left-[50px] w-[1340px] h-[474px] rounded-[20px] border border-solid border-[#122e6c]" />
         <p className="top-[9189px] left-[188px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold  text-[#f36a1e]">
-            Instead of just theory, we worked on realistic case studies,
+            I loved building our own brand and creating a detailed
             <br />
-            applying our learnings like in real life.{" "}
+           investor pitch- it felt like the real world.{" "}
+           <br />
           </span>
-          <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
-          <span className="text-black text-2xl"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#122e6c] text-2xl">– Laavanya,</span>
+          <span className="text-black text-2xl"> The British Co-Ed High School, Patiala</span>
         </p>
         <div className="top-[9054px] left-[16px] w-[140px] h-[220px] bg-white text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “

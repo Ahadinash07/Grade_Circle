@@ -27,10 +27,10 @@ export const SampleProjects = () => {
           <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
             <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
               <span className="font-semibold italic text-[#f36a1e]">
-                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                I loved building our own brand and creating a detailed investor pitch- it felt like the real world.
               </span>
-              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
-              <span className="text-black text-lg"> Prometheus School, Noida</span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Laavanya,</span>
+              <span className="text-black text-lg"> The British Co-Ed High School, Patiala</span>
             </p>
           </div>
         </div>

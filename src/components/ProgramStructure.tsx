@@ -59,10 +59,10 @@ export const ProgramStructure = () => {
           <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
             <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
               <span className="font-semibold italic text-[#f36a1e]">
-                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                We were pushed to go into every detail. The accountability and depth made it stand out from any school project
               </span>
-              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
-              <span className="text-black text-lg"> Prometheus School, Noida</span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Riva,</span>
+              <span className="text-black text-lg"> Kanakia International School, Mumbai</span>
             </p>
           </div>
         </div>
