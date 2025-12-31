@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const FoundingTeam = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,6 +21,15 @@ export const FoundingTeam = () => {
     }
   ];
 
+  // Auto-slide every 3 seconds for mobile
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [teamMembers.length]);
+
   return (
     <>
       {/* Mobile Version */}
@@ -31,16 +40,26 @@ export const FoundingTeam = () => {
         </h2>
 
         {/* Team Member Card */}
-        <div className="p-4 mb-4">
-          <img
-            src={teamMembers[activeIndex].image}
-            alt={teamMembers[activeIndex].name}
-            className="w-full h-auto max-h-[300px] object-contain mx-auto"
-          />
+        <div className="p-4 mb-4 overflow-hidden">
+          <div className="relative w-full h-[300px]">
+            {teamMembers.map((member, index) => (
+              <img
+                key={index}
+                src={member.image}
+                alt={member.name}
+                className={`absolute inset-0 w-full h-full object-contain mx-auto transition-all duration-500 ease-in-out ${
+                  index === activeIndex ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
+                }`}
+                style={{
+                  transform: index === activeIndex ? 'translateX(0)' : index < activeIndex ? 'translateX(-100%)' : 'translateX(100%)'
+                }}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Member Info */}
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 transition-all duration-500 ease-in-out">
           <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-xl">
             {teamMembers[activeIndex].name}
           </h3>
@@ -55,7 +74,7 @@ export const FoundingTeam = () => {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`w-3 h-3 rounded-full ${
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === activeIndex ? 'bg-[#122e6c]' : 'bg-gray-300'
               }`}
             />
