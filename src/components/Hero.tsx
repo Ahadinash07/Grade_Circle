@@ -56,13 +56,29 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Mobile Background - Orange gradient */}
-      <div className="block md:hidden absolute top-0 left-0 w-full min-h-[600px] bg-gradient-to-b from-[#2c5f8d] via-[#ef7f1a] to-[#d66a0a] z-0">
-        <div className="absolute inset-0 bg-[url('https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg')] bg-cover bg-center opacity-40"></div>
+      {/* Mobile Background - Layered images */}
+      <div className="block md:hidden absolute top-0 left-0 w-full min-h-[400px] z-10">
+        {/* Bottom layer - Vector 10.png */}
+        <img
+          className="absolute bottom-0  left-0 w-full h-1/2 object-cover"
+          alt="Bottom Background"
+          src="/Vector 10.png"
+        />
+        {/* Top layer - Rectangle overlay */}
+       
+      </div>
+      
+      <div className="block md:hidden absolute left-0 w-full min-h-[400px] z-0">
+         <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          alt="Top Background"
+          src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
+        />
       </div>
 
       {/* Mobile Content */}
       <div className="block md:hidden relative z-10 pt-20 px-5 pb-8">
+        
         {/* Title */}
         <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] italic leading-[1.15] mb-5">
           Professional Immersion<br />Internship
@@ -78,13 +94,21 @@ export const Hero = () => {
           <p className="[font-family:'Inter',Helvetica] font-normal text-white text-[18px] mb-1">
             Program Fee:
           </p>
-          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[22px]">
-            INR <span className="text-[28px]">17,500 + 18% GST</span>
+          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[18px]">
+            INR <span className="text-[20px]">17,500 + 18% GST</span>
           </p>
         </div>
 
+        {/* Form Background Image - Full Width */}
+        <img
+          className="absolute left-0 right-0 w-full h-[600px] z-0"
+          alt="Form Background"
+          src="/Rectangle 57.png"
+          style={{ top: '68%', transform: 'translateY(-50%)' }}
+        />
+
         {/* Contact Form */}
-        <div className="mt-6">
+        <div className="mt-6 relative z-10">
           <ContactForm />
         </div>
       </div>
