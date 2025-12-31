@@ -131,7 +131,7 @@ export const Hero = () => {
         />
 
         {/* Contact Form */}
-        <div className="mt-6 relative z-10">
+        <div className="mt-6 relative z-10 -mx-5">
           <ContactForm />
         </div>
       </div>

@@ -24,9 +24,9 @@ export const ProgramOverview = () => {
 
         {/* Student Image - Circular with orange overlay */}
         <div className="flex justify-center -mt-4 relative z-10">
-          <div className="w-full max-w-[420px] aspect-[3/4] rounded-b-[50%] overflow-hidden shadow-xl relative">
+          <div className="w-full max-w-[450px] aspect-[3/4] rounded-b-[50%] overflow-hidden shadow-xl relative">
             {/* Orange overlay on top */}
-            <div className="absolute top-0 left-0 right-0 h-56 bg-gradient-to-b from-[#ef7f1a] to-transparent z-10"></div>
+            <div className="absolute top-0 left-0 right-0 h-60 w-full bg-gradient-to-b from-[#ef7f1a] to-transparent z-10"></div>
             <img
               className="w-full h-full object-cover"
               alt="Pg image"

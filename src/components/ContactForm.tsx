@@ -60,7 +60,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col w-full md:w-full md:max-w-[540px] lg:w-[500px] h-auto md:min-h-[580px] items-start gap-5 md:gap-[38px] px-5 md:px-[35px] py-7 md:py-[38px] bg-[#000000f5] rounded-[28px] md:rounded-[45px] border border-solid border-black shadow-lg mx-auto">
+    <div className="flex flex-col w-full md:w-full md:max-w-[540px] lg:w-[500px] h-auto md:min-h-[580px] items-start gap-5 md:gap-[38px] px-5 md:px-[35px] py-7 md:py-[38px] bg-[#000000f5] rounded-[28px] md:rounded-[45px] border border-solid border-black shadow-lg md:mx-auto">
       <div className="flex flex-col w-full items-start gap-2 relative">
         <div className="relative w-full [font-family:'Inter',Helvetica] font-bold text-white text-[26px] md:text-[30px] tracking-[0] leading-tight">
           Connect With An Expert
