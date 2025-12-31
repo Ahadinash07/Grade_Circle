@@ -90,12 +90,12 @@ export const Testimonials = () => {
         <div className="absolute top-[7422px] left-[47px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
         <p className="top-[7448px] left-[185px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold text-[#f36a1e]">
-            Instead of just theory, we worked on realistic case studies,
-            <br />
-            applying our learnings like in real life.{" "}
+            The continuity with one mentor for four weeks made it far
+
+            more engaging than any other program I've attended.{" "}
           </span>
-          <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
-          <span className="text-black text-2xl"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#122e6c] text-2xl">– Aahana,</span>
+          <span className="text-black text-2xl"> Lotus Valley International School, Noida</span>
         </p>
         <div className="top-[7313px] left-[23px] w-[140px] h-[220px] bg-white text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
@@ -125,54 +125,54 @@ export const Testimonials = () => {
         <div className="absolute top-[7791px] left-[23px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
         <div className="absolute top-[7776px] left-[143px] w-[228px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Learning by Doing</div>
         <p className="absolute top-[7830px] left-[151px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
-          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.</span>
+          <span className="font-semibold italic text-[#122e6c] leading-[30px]">It gave me hands-on experience in consulting– from research to pitching – something we don't get to do in a classroom.</span>
           <br />
-          <span className="font-bold text-[#ef7f1a]">– Sara,</span>
-          <span className="text-[#ef7f1a]"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#ef7f1a]">– Devansh,</span>
+          <span className="text-[#ef7f1a]"> Overseas Family School, Singapore</span>
         </p>
 
         <div className="absolute top-[7797px] left-[735px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[7749px] left-[689px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[7791px] left-[712px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[7776px] left-[832px] w-[228px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Learning by Doing</div>
+        <div className="absolute top-[7776px] left-[800px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Future-Ready Skillset</div>
         <p className="absolute top-[7830px] left-[840px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
-          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.</span>
+          <span className="font-semibold italic text-[#122e6c] leading-[30px]">I improved critical skills – research, teamwork, and professional presentations – that apply to any career.</span>
           <br />
-          <span className="font-bold text-[#ef7f1a]">– Sara,</span>
-          <span className="text-[#ef7f1a]"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#ef7f1a]">– Diya,</span>
+          <span className="text-[#ef7f1a]"> Indus International School, Pune</span>
         </p>
 
         <div className="absolute top-[8049px] left-[46px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8001px] left-[0px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8043px] left-[23px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8028px] left-[143px] w-[228px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Learning by Doing</div>
+        <div className="absolute top-[8028px] left-[143px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Prepared for the Real World</div>
         <p className="absolute top-[8082px] left-[151px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
-          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.</span>
+          <span className="font-semibold italic text-[#122e6c] leading-[30px]">This internship gave me life skills I can use beyond school– a lot of which can be implemented in real life.</span>
           <br />
-          <span className="font-bold text-[#ef7f1a]">– Sara,</span>
-          <span className="text-[#ef7f1a]"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#ef7f1a]">– Jaskirat,</span>
+          <span className="text-[#ef7f1a]"> The British Co-Ed High School, Patiala</span>
         </p>
 
         <div className="absolute top-[8049px] left-[735px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8001px] left-[689px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8043px] left-[712px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8028px] left-[832px] w-[228px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Learning by Doing</div>
+        <div className="absolute top-[8028px] left-[832px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Career Exploration & Clarity</div>
         <p className="absolute top-[8082px] left-[840px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
-          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.</span>
+          <span className="font-semibold italic text-[#122e6c] leading-[30px]">GradCircle helped me clear my doubts about career options. You think something isn't for you, but after trying it, you realize it is.</span>
           <br />
-          <span className="font-bold text-[#ef7f1a]">– Sara,</span>
-          <span className="text-[#ef7f1a]"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#ef7f1a]">– Avni,</span>
+          <span className="text-[#ef7f1a]"> St Constantine's International School, Tanzania</span>
         </p>
 
         <div className="absolute top-[8301px] left-[424px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8253px] left-[378px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8295px] left-[401px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8280px] left-[521px] w-[228px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Learning by Doing</div>
+        <div className="absolute top-[8280px] left-[521px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Real Industry Exposure</div>
         <p className="absolute top-[8334px] left-[529px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
-          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.</span>
+          <span className="font-semibold italic text-[#122e6c] leading-[30px]">Corporate and international law now excite me far more than I imagined before starting this program.</span>
           <br />
-          <span className="font-bold text-[#ef7f1a]">– Sara,</span>
-          <span className="text-[#ef7f1a]"> Prometheus School, Noida</span>
+          <span className="font-bold text-[#ef7f1a]">– Aviraj,</span>
+          <span className="text-[#ef7f1a]"> Mahindra United World College, Pune</span>
         </p>
       </div>
     </>

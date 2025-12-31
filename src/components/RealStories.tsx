@@ -26,6 +26,30 @@ export const RealStories = () => {
       quote: "Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.",
       author: "Sara",
       school: "Prometheus School, Noida"
+    },
+    {
+      heading: "Real-World Experience",
+      quote: "The mentorship program gave me insights into corporate life that no classroom could provide.",
+      author: "Aahana",
+      school: "Lotus Valley International School, Noida"
+    },
+    {
+      heading: "Career Clarity",
+      quote: "I now understand what different roles entail and can make informed career decisions.",
+      author: "Rahul",
+      school: "Delhi Public School, Gurgaon"
+    },
+    {
+      heading: "Skill Development",
+      quote: "The hands-on projects helped me develop practical skills that will be valuable in my future career.",
+      author: "Priya",
+      school: "Modern School, Delhi"
+    },
+    {
+      heading: "Industry Connections",
+      quote: "Getting mentored by professionals from top companies opened doors I never knew existed.",
+      author: "Arjun",
+      school: "St. Xavier's School, Mumbai"
     }
   ];
 
@@ -87,10 +111,10 @@ export const RealStories = () => {
           <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
             <p className="[font-family:'Montserrat',Helvetica] font-normal text-xl leading-relaxed">
               <span className="font-semibold italic text-[#f36a1e]">
-                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                The continuity with one mentor for four weeks made it far more engaging than any other program I've attended.
               </span>
-              <span className="font-bold text-[#122e6c] text-lg"> – Sara,</span>
-              <span className="text-black text-lg"> Prometheus School, Noida</span>
+              <span className="font-bold text-[#122e6c] text-lg"> – Aahana,</span>
+              <span className="text-black text-lg"> Lotus Valley International School, Noida</span>
             </p>
           </div>
         </div>
@@ -103,31 +127,42 @@ export const RealStories = () => {
           </h2>
 
           {/* Testimonial Card */}
-          <div className="relative">
-            {/* Quote Mark */}
-            <div className="text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none absolute -top-7 -inset-4 bg-white h-[80px] w-[80px] font-bold ">
-              “
+          <div className="relative overflow-hidden">
+            {/* Quote Mark - Fixed position for all cards */}
+            <div className="absolute -top-5 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-50">
+              <span className="text-[#ef7f1a] h-[100%] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none">
+                “
+              </span>
             </div>
             
-            <div className="border border-[#ef7f1a] rounded-lg p-6 pt-12">
-              <div className="text-black text-lg mb-2">Learning<br />by Doing</div>
-              <p className="[font-family:'Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4">
-                Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
-              </p>
-              <p className="text-[#ef7f1a]">
-                <span className="font-bold">– Sara,</span> Prometheus School, Noida
-              </p>
+            <div 
+              className="flex transition-transform duration-300 ease-in-out"
+              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="flex-shrink-0 w-full relative">
+                  <div className="border border-[#ef7f1a] rounded-lg p-6 mt-6 pt-12 bg-white shadow-sm">
+                    <div className="text-black text-lg mb-2">{testimonial.heading}</div>
+                    <p className="[font-family:'Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4">
+                      {testimonial.quote}
+                    </p>
+                    <p className="text-[#ef7f1a]">
+                      <span className="font-bold">– {testimonial.author},</span> {testimonial.school}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
           {/* Dots Navigation */}
           <div className="flex justify-center gap-2 mt-6">
-            {[0, 1, 2].map((index) => (
+            {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-3 h-3 rounded-full ${
-                  index === 1 ? 'bg-[#122e6c]' : 'bg-gray-300'
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === activeIndex ? 'bg-[#122e6c]' : 'bg-gray-300'
                 }`}
               />
             ))}
