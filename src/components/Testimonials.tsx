@@ -135,7 +135,7 @@ export const Testimonials = () => {
         <div className="absolute top-[7797px] left-[735px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[7749px] left-[689px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[7791px] left-[712px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[7776px] left-[800px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Future-Ready Skillset</div>
+        <div className="absolute top-[7776px] left-[800px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] bg-white font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Future-Ready Skillset</div>
         <p className="absolute top-[7830px] left-[840px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold italic text-[#122e6c] leading-[30px]">I improved critical skills – research, teamwork, and professional presentations – that apply to any career.</span>
           <br />
@@ -146,7 +146,7 @@ export const Testimonials = () => {
         <div className="absolute top-[8049px] left-[46px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8001px] left-[0px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8043px] left-[23px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8028px] left-[143px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Prepared for the Real World</div>
+        <div className="absolute top-[8028px] left-[143px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] bg-white font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Prepared for the Real World</div>
         <p className="absolute top-[8082px] left-[151px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold italic text-[#122e6c] leading-[30px]">This internship gave me life skills I can use beyond school– a lot of which can be implemented in real life.</span>
           <br />
@@ -157,7 +157,7 @@ export const Testimonials = () => {
         <div className="absolute top-[8049px] left-[735px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8001px] left-[689px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8043px] left-[712px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8028px] left-[832px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Career Exploration & Clarity</div>
+        <div className="absolute top-[8028px] left-[832px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl bg-white text-center tracking-[0] leading-[normal]">Career Exploration & Clarity</div>
         <p className="absolute top-[8082px] left-[840px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold italic text-[#122e6c] leading-[30px]">GradCircle helped me clear my doubts about career options. You think something isn't for you, but after trying it, you realize it is.</span>
           <br />
@@ -168,7 +168,7 @@ export const Testimonials = () => {
         <div className="absolute top-[8301px] left-[424px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />
         <img className="absolute top-[8253px] left-[378px] w-[401px] h-[124px]" alt="Vector" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-8.svg" />
         <div className="absolute top-[8295px] left-[401px] w-[102px] h-[185px] flex items-center justify-center text-[#ef7f1a] text-[300px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">“</div>
-        <div className="absolute top-[8280px] left-[521px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal text-black text-2xl text-center tracking-[0] leading-[normal]">Real Industry Exposure</div>
+        <div className="absolute top-[8280px] left-[521px] w-[328px] h-[29px] flex items-center justify-center [font-family:'Montserrat',Helvetica] font-normal bg-white text-black text-2xl text-center tracking-[0] leading-[normal]">Real Industry Exposure</div>
         <p className="absolute top-[8334px] left-[529px] w-[538px] text-2xl leading-6 [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold italic text-[#122e6c] leading-[30px]">Corporate and international law now excite me far more than I imagined before starting this program.</span>
           <br />
