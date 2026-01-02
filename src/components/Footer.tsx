@@ -127,6 +127,14 @@ export const Footer = () => {
         <p className="absolute top-[10020px] left-[105px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
           Next Cohorts Starting: <span className="font-bold">Jan</span> & <span className="font-bold">Feb</span> (Weekends)
         </p>
+        
+        {/* Certificate Image */}
+        <img
+          className="absolute top-[10050px] left-[105px] w-[600px] h-auto rounded-lg shadow-lg"
+          src="https://c.animaapp.com/mjmwrwbp4K97wU/img/image-6-1.png"
+          alt="Sample Certificate"
+        />
+        
         <div className="absolute top-[9950px] left-[835px]"><ContactForm /></div>
       </div>
     </>
