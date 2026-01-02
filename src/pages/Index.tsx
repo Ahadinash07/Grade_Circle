@@ -16,7 +16,7 @@ import { SampleProjects } from '../components/SampleProjects';
 import { Footer } from '../components/Footer';
 
 const Index = () => {
-  const currentUrl = typeof window !== 'undefined' ? window.location.origin : 'https://gradcircle.com';
+  const currentUrl = typeof window !== 'undefined' ? window.location.origin : 'https://grade-circle.vercel.app/';
 
   return (
     <>

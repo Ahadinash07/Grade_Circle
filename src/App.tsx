@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <ErrorBoundary>
-      {/* <HelmetProvider> */}
+      <HelmetProvider>
         <QueryClientProvider client={queryClient}>
           <TooltipProvider>
             <Toaster />
@@ -36,7 +36,7 @@ const App = () => {
             </BrowserRouter>
           </TooltipProvider>
         </QueryClientProvider>
-      {/* </HelmetProvider> */}
+      </HelmetProvider>
     </ErrorBoundary>
   );
 };
