@@ -7,7 +7,7 @@ export const FoundedByAlumni = () => {
       <div className="block md:hidden w-full">
         {/* Yellow Header - Centered */}
         <div className="bg-[#f8b402] py-7 px-5 mb-7 shadow-sm">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[26px] text-center leading-tight">
+          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[30px] text-center leading-tight">
             Founded by<br />Alumni from
           </h2>
         </div>

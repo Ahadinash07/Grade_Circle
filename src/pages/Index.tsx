@@ -18,7 +18,7 @@ import { Footer } from '../components/Footer';
 const Index = () => {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>GradCircle - Professional Immersion Internship Program</title>
         <meta name="description" content="Join GradCircle's 4-week virtual internship program for grades 9-12 students. Work with industry mentors from Fortune-500 companies on real-world projects." />
         <meta name="author" content="GradCircle" />
@@ -33,22 +33,16 @@ const Index = () => {
         <meta name="twitter:title" content="GradCircle - Professional Immersion Internship Program" />
         <meta name="twitter:description" content="Join GradCircle's 4-week virtual internship program for grades 9-12 students. Work with industry mentors from Fortune-500 companies on real-world projects." />
         <meta name="twitter:image" content="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png" />
-      </Helmet>
+
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WP7T5WZF');</script>
+      </Helmet> */}
+
       <div className="relative min-h-screen w-full  overflow-x-hidden">
-        {/* <Header />
-        <Hero />
-        <FoundedByAlumni />
-        <ProgramOverview />
-        <CareerStreams />
-        <StudentExperiences />
-        <Testimonials />
-        <ProgramStructure />
-        <ProgramDeliverables />
-        <FoundingTeam />
-        <RealStories />
-        <TrustedSchools />
-        <SampleProjects />
-        <Footer /> */}
+      
         <Header />
         <Hero />
         <FoundedByAlumni />
@@ -56,7 +50,7 @@ const Index = () => {
         <CareerStreams />
         <Testimonials />
         <ProgramStructure />
-        <StudentExperiences />
+        {/* <StudentExperiences /> */}
         <ProgramDeliverables />
         <FoundingTeam />
         <RealStories />

@@ -17,7 +17,7 @@ export const ProgramOverview = () => {
 
         {/* Orange Background Section with Description */}
         <div className="bg-[#ef7f1a] px-6 py-8">
-          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[18px] leading-[1.5]">
+          <p className="[font-family:'Inter',Helvetica] text-white text-[18px] leading-[1.5]">
             Students from Grades 9-12 work with "active industry professionals" on simulated industry-focused projects.
           </p>
         </div>

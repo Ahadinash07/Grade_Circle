@@ -39,7 +39,7 @@ export const Hero = () => {
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/vector-1.svg"
       />
       {/* Main Title - Added for Desktop */}
-      <h1 className="hidden lg:block absolute top-[140px] left-[50px] [font-family:'Inter',Helvetica] font-bold text-white text-6xl italic leading-tight">
+      <h1 className="hidden lg:block absolute top-[130px] left-[50px] [font-family:'Inter',Helvetica] font-bold text-white text-6xl leading-tight">
         Professional Immersion<br />Internship
       </h1>
 
@@ -103,12 +103,12 @@ export const Hero = () => {
       <div className="block md:hidden relative z-10 pt-20 px-5 pb-8">
         
         {/* Title */}
-        <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] italic leading-[1.15] mb-5">
+        <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] leading-[1.15] mb-5">
           Professional Immersion<br />Internship
         </h1>
 
         {/* Subtitle with underline */}
-        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[16px] leading-[1.4] mb-6 underline decoration-1 underline-offset-2">
+        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[16px] leading-[1.4] mb-6  ">
           Industry Mentors | Professional<br />Projects | Hands-on Learning
         </p>
 
@@ -179,7 +179,7 @@ export const Hero = () => {
       {showFloatingButton && (
         <a
           href="#contact-form"
-          className="block md:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-[#ef7f1a] text-white font-bold text-lg py-3 px-8 rounded-full shadow-lg hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-300 animate-bounce"
+          className="block md:hidden fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 bg-[#ef7f1a] text-white font-bold text-lg py-4 w-full text-center shadow-lg hover:bg-[#d66f15] active:bg-[#c06312]"
         >
           Apply Now
         </a>

@@ -2,7 +2,10 @@ import React from 'react';
 
 export const Header = () => {
   return (
+
     <>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP7T5WZF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {/* Mobile: centered, smaller logo */}
       <img
         className="block md:hidden absolute top-4 left-1/2 -translate-x-1/2 w-[200px] h-auto object-contain z-20"
