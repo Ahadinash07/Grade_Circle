@@ -16,9 +16,11 @@ import { SampleProjects } from '../components/SampleProjects';
 import { Footer } from '../components/Footer';
 
 const Index = () => {
+  const currentUrl = typeof window !== 'undefined' ? window.location.origin : 'https://gradcircle.com';
+
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <title>GradCircle - Professional Immersion Internship Program</title>
         <meta name="description" content="Join GradCircle's 4-week virtual internship program for grades 9-12 students. Work with industry mentors from Fortune-500 companies on real-world projects." />
         <meta name="author" content="GradCircle" />
@@ -26,20 +28,14 @@ const Index = () => {
         <meta property="og:title" content="GradCircle - Professional Immersion Internship Program" />
         <meta property="og:description" content="Join GradCircle's 4-week virtual internship program for grades 9-12 students. Work with industry mentors from Fortune-500 companies on real-world projects." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gradcircle.com" />
+        <meta property="og:url" content={currentUrl} />
         <meta property="og:image" content="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="GradCircle - Professional Immersion Internship Program" />
         <meta name="twitter:description" content="Join GradCircle's 4-week virtual internship program for grades 9-12 students. Work with industry mentors from Fortune-500 companies on real-world projects." />
         <meta name="twitter:image" content="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png" />
-
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WP7T5WZF');</script>
-      </Helmet> */}
+      </Helmet>
 
       <div className="relative min-h-screen w-full  overflow-x-hidden">
       
